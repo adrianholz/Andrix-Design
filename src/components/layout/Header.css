@@ -1,0 +1,29 @@
+header {
+  background: var(--b2);
+  .container {
+    padding: 30px 20px;
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+  }
+  nav {
+    ul {
+      font-family: var(--font-poppins);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px 50px;
+      background: var(--b1);
+      padding: 18px 36px;
+      border-radius: 20px;
+      li {
+        a {
+          text-decoration: none;
+          color: var(--w1);
+          font-weight: 500;
+          display: inline-block;
+        }
+      }
+    }
+  }
+}
