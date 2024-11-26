@@ -86,7 +86,7 @@ export default function Footer() {
           <p>Andrix Design © All rights reserved.</p>
         </div>
       </div>
-      <div className="blur"></div>
+      <div className="blur uxui active"></div>
     </footer>
   );
 }
