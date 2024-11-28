@@ -9,7 +9,7 @@ export const poppins = Poppins({
 });
 
 export const raleway = Raleway({
-  weight: ["200", "400", "500", "600", "800", "900"],
+  weight: ["200", "400", "500", "600", "700", "800", "900"],
   style: ["normal", "italic"],
   subsets: ["latin"],
   variable: "--font-raleway",
