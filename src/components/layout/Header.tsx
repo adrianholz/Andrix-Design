@@ -10,8 +10,8 @@ export default function Header() {
           <Link href="/">
             <Image
               src="/assets/img/svg/Andrix.svg"
-              height={78}
               width={100}
+              height={78}
               alt="Andrix Logo"
             />
           </Link>

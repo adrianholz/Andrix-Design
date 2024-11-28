@@ -1,0 +1,38 @@
+.heading {
+  text-align: center;
+  position: relative;
+  h1 {
+    font-size: 1.125rem;
+    font-weight: 600;
+    letter-spacing: 0.3rem;
+    text-transform: uppercase;
+    margin: 0 auto;
+    max-width: fit-content;
+    padding: 20px 40px;
+    border-radius: 20px 20px 0 0;
+  }
+  > div {
+    padding: 50px 20px;
+    background: var(--b2);
+    h2 {
+      font-size: 3rem;
+      font-weight: 200;
+      text-transform: uppercase;
+      margin: 0 auto;
+      max-width: 900px;
+      span {
+        font-size: 4rem;
+        font-weight: 800;
+        text-transform: uppercase;
+        margin: 0 auto;
+      }
+    }
+  }
+}
+
+.heading.dark {
+  color: var(--w1);
+  h1 {
+    background: var(--b1);
+  }
+}

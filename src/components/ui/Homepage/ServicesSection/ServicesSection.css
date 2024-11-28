@@ -1,0 +1,167 @@
+.services {
+  padding: 280px 0 160px 0;
+  margin-bottom: -60px;
+  background: url("/assets/img/webp/bg-paper.webp"),
+    url("/assets/img/svg/Andrix-bg.svg");
+  background-repeat: no-repeat, no-repeat;
+  background-size: cover, 1400px;
+  background-position: top, bottom -165px right -240px;
+  .content {
+    padding: 80px 20px;
+  }
+  .service-description {
+    color: var(--b1);
+    font-size: 1.125rem;
+    font-weight: 600;
+    line-height: 2rem;
+    max-width: 700px;
+    padding: 20px 0;
+  }
+  .services-wrapper {
+    display: grid;
+    grid-template-columns: 3fr 1.15fr;
+    margin: 30px 0 80px 0;
+    .window {
+      background: var(--b2);
+      border-radius: 20px 0 0 20px;
+      padding: 20px;
+      box-shadow: rgba(0, 0, 0, 0.1) 0 4px 6px -1px,
+        rgba(0, 0, 0, 0.06) 0 2px 4px -1px;
+      position: relative;
+      z-index: 4;
+    }
+    .nav {
+      display: grid;
+      grid-template-rows: repeat(6, 1fr);
+      gap: 12px;
+      > div {
+        background: #e3e3e3;
+        color: var(--b1);
+        border-radius: 0 20px 20px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 12px 20px;
+        position: relative;
+        z-index: 2;
+        cursor: pointer;
+        box-shadow: 0 4px 16px rgba(17, 17, 26, 0.05),
+          0 8px 32px rgba(17, 17, 26, 0.05);
+        transition-property: color, background, transform, opacity;
+        transition-duration: 0.2s, 0.2s, 0.5s, 0.3s;
+
+        h2 {
+          font-weight: 600;
+          font-size: 1.5rem;
+        }
+        span {
+          font-family: Poppins, sans-serif;
+          position: absolute;
+          right: 20px;
+          top: 9px;
+          color: #cecece;
+          font-size: 3rem;
+          font-weight: 700;
+          transition: 0.2s ease;
+        }
+        &:nth-child(1) span {
+          right: 25px;
+        }
+      }
+      > div:hover,
+      > div.active {
+        background: var(--b2);
+        color: var(--w1);
+        opacity: 1 !important;
+        span {
+          color: var(--b1);
+        }
+      }
+    }
+    .window {
+      .video-transition {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: calc(100% - 40px);
+        height: calc(100% - 40px);
+        padding: 20px;
+        z-index: 1;
+        opacity: 0;
+        transition: 0.25s ease;
+        pointer-events: none;
+        video {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          border-radius: 20px;
+        }
+      }
+      .video-transition.active {
+        opacity: 1;
+      }
+      .window-inner {
+        background: var(--b1);
+        border-radius: 20px;
+        .title {
+          display: flex;
+          gap: 20px;
+          align-items: center;
+          div {
+            width: 130px;
+            height: 130px;
+            padding: 20px 35px 30px 20px;
+            border-radius: 0 0 20px 0;
+            background: var(--b2);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img {
+              filter: drop-shadow(0 2px 10px rgba(0, 0, 0, 0.5));
+            }
+          }
+          h2 {
+            color: var(--w1);
+            font-weight: 800;
+            text-transform: uppercase;
+            font-size: 3rem;
+            span {
+              font-size: 4rem;
+            }
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+          }
+        }
+        p {
+          font-size: 1.125rem;
+          font-weight: 600;
+          line-height: 2rem;
+          max-width: 700px;
+          color: #aaa;
+          padding: 20px;
+        }
+      }
+      .process {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        padding: 0 20px 20px 20px;
+        video {
+          border-radius: 10px;
+          max-height: 200px;
+          box-shadow: rgba(0, 0, 0, 0.25) 0 14px 28px,
+            rgba(0, 0, 0, 0.22) 0 10px 10px;
+        }
+        span {
+          color: var(--w1);
+          font-size: 1.25rem;
+          text-transform: uppercase;
+          font-weight: 700;
+          display: inline-block;
+        }
+        p {
+          padding: 10px 0 0 0;
+        }
+      }
+    }
+  }
+}

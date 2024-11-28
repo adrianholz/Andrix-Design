@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { poppins, raleway } from "./fonts";
+import { poppins, raleway, lora, livvic, robotoMono } from "./fonts";
 
 export const metadata: Metadata = {
   title: "Andrix Design",
@@ -13,7 +13,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${poppins.variable} ${raleway.variable}`}>
+    <html
+      lang="en"
+      className={`${poppins.variable} ${raleway.variable} ${lora.variable} ${livvic.variable} ${robotoMono.variable}`}
+    >
       <body>{children}</body>
     </html>
   );

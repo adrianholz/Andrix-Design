@@ -1,8 +1,12 @@
 import Image from "next/image";
 import "./Footer.css";
 import Link from "next/link";
+import { useContext } from "react";
+import { ServiceContext } from "@/app/ServiceContext";
 
 export default function Footer() {
+  const { blurRefs } = useContext(ServiceContext)!;
+
   return (
     <footer>
       <div className="container">
@@ -86,7 +90,14 @@ export default function Footer() {
           <p>Andrix Design © All rights reserved.</p>
         </div>
       </div>
-      <div className="blur uxui active"></div>
+      <div
+        className="blur uxui active"
+        ref={(el) => {
+          if (el && blurRefs.current) {
+            blurRefs.current[0] = el;
+          }
+        }}
+      ></div>
     </footer>
   );
 }

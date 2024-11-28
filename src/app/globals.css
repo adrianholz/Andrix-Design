@@ -88,7 +88,7 @@ ul {
 }
 
 .blur.uxui {
-  background: linear-gradient(to right, #0056ff, #3815ff, #b415ff);
+  background-image: linear-gradient(to right, #0056ff, #3815ff, #b415ff);
 }
 .blur.artwork {
   background: linear-gradient(to right, #ff057c, #b805ff, #440ec2);
@@ -97,10 +97,10 @@ ul {
   background-image: linear-gradient(to right, #f01 0, #1e00ff 100%);
 }
 .blur.social {
-  background-image: linear-gradient(to right, #0aec61, #00d9ff, #0051ff);
+  background-image: linear-gradient(to right, #0cf, #06f, #8000ff);
 }
 .blur.packaging {
-  background-image: linear-gradient(to right, #0cf, #06f, #8000ff);
+  background-image: linear-gradient(to right, #0aec61, #00d9ff, #0051ff);
 }
 .blur.video {
   background: linear-gradient(to right, #960af3, #f10b0b, #e98d0c);
