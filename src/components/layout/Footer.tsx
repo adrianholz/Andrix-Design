@@ -3,9 +3,11 @@ import "./Footer.css";
 import Link from "next/link";
 import { useContext } from "react";
 import { ServiceContext } from "@/app/ServiceContext";
+import { ContactContext } from "@/app/ContactContext";
 
 export default function Footer() {
   const { blurRefs } = useContext(ServiceContext)!;
+  const { setContact } = useContext(ContactContext)!;
 
   return (
     <footer>
@@ -81,7 +83,7 @@ export default function Footer() {
                 <Link href="/">News</Link>
               </li>
               <li>
-                <Link href="/">Contact</Link>
+                <p onClick={() => setContact(true)}>Contact</p>
               </li>
             </ul>
           </div>

@@ -1,7 +1,8 @@
 "use client";
 
+import { ServiceContext } from "@/app/ServiceContext";
 import Image from "next/image";
-import { MutableRefObject, RefObject } from "react";
+import { MutableRefObject, RefObject, useContext } from "react";
 
 type ServicesProps = {
   videoRef: RefObject<HTMLDivElement>;
@@ -20,6 +21,7 @@ export default function Services({
   handleTitleChange,
   imageRefs,
 }: ServicesProps) {
+  const { blurRefs } = useContext(ServiceContext)!;
   return (
     <div className="services-wrapper">
       <div className="window">
@@ -59,6 +61,14 @@ export default function Services({
               <p>{service.process}</p>
             </div>
           </div>
+          <div
+            className="blur uxui active"
+            ref={(el) => {
+              if (el && blurRefs.current) {
+                blurRefs.current[3] = el;
+              }
+            }}
+          ></div>
         </div>
       </div>
       <div className="nav">

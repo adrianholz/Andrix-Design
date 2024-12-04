@@ -152,3 +152,78 @@ export const boxes = [
     button: CSSProperties;
   };
 }[];
+
+export const projects = [
+  {
+    title: {
+      name: "Retroverse",
+      secondName: "",
+      style: {
+        fontFamily: "var(--font-vudotronic)",
+        background: "-webkit-linear-gradient(#232323, #161616)",
+        backgroundClip: "text",
+        WebkitBackgroundClip: "text",
+        WebkitTextFillColor: "transparent",
+        fontSize: "3rem",
+        letterSpacing: "3px",
+      },
+    },
+    description:
+      "Manually coded website focused on organic traffic. Integrated with WordPress for the managing of all interface content. <br /> Manually coded website focused on organic traffic. Integrated with WordPress for the managing of all interface content.",
+    video: true,
+    preview: "/assets/video/retroverse.webm",
+    type: "uxui",
+    colors: [
+      { color: "000000", font: "FFFFFF" },
+      { color: "161616", font: "FFFFFF" },
+      { color: "232323", font: "FFFFFF" },
+      { color: "FFFFFF", font: "161616" },
+      { color: "AAAAAA", font: "161616" },
+    ],
+    technologies: ["Figma", "Photoshop", "Premiere Pro"],
+  },
+  {
+    title: {
+      name: "dog",
+      secondName: "resort",
+      style: {
+        fontFamily: "var(--font-livvic)",
+      },
+    },
+    description:
+      "Manually coded website focused on organic traffic. Integrated with WordPress for the managing of all interface content. <br /> Manually coded website focused on organic traffic. Integrated with WordPress for the managing of all interface content.",
+    video: false,
+    preview: "url(/assets/img/webp/dogresort.webp)",
+    type: "uxui",
+    colors: [
+      { color: "97CA49", font: "FFFFFF" },
+      { color: "FFA307", font: "FFFFFF" },
+      { color: "FFCCC3", font: "161616" },
+      { color: "47C8F3", font: "FFFFFF" },
+      { color: "1E37B8", font: "FFFFFF" },
+    ],
+    technologies: ["Figma", "Photoshop", "Illustrator"],
+  },
+  {
+    title: {
+      name: "Nike",
+      secondName: " Concept",
+      style: {
+        fontFamily: "var(--font-poppins)",
+      },
+    },
+    description:
+      "Manually coded website focused on organic traffic. Integrated with WordPress for the managing of all interface content. <br /> Manually coded website focused on organic traffic. Integrated with WordPress for the managing of all interface content.",
+    video: false,
+    preview: "url(/assets/img/webp/nike.webp)",
+    type: "uxui",
+    colors: [
+      { color: "97CA49", font: "FFFFFF" },
+      { color: "FFA307", font: "FFFFFF" },
+      { color: "FFCCC3", font: "161616" },
+      { color: "47C8F3", font: "FFFFFF" },
+      { color: "1E37B8", font: "FFFFFF" },
+    ],
+    technologies: ["Figma", "Photoshop", "Illustrator"],
+  },
+];

@@ -19,8 +19,10 @@ footer {
       color: var(--w1);
       margin-bottom: 20px;
     }
-    a {
+    a,
+    p {
       text-decoration: none;
+      cursor: pointer;
       color: #cecece;
     }
     span {

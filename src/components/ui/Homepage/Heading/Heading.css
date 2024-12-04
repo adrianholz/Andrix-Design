@@ -3,6 +3,7 @@
   position: relative;
   h1 {
     font-size: 1.125rem;
+
     font-weight: 600;
     letter-spacing: 0.3rem;
     text-transform: uppercase;
@@ -15,6 +16,8 @@
     padding: 50px 20px;
     background: var(--b2);
     h2 {
+      position: relative;
+      z-index: 2;
       font-size: 3rem;
       font-weight: 200;
       text-transform: uppercase;
@@ -34,5 +37,29 @@
   color: var(--w1);
   h1 {
     background: var(--b1);
+  }
+}
+
+.heading.light {
+  color: var(--b1);
+  h1 {
+    font-weight: 700;
+    background: linear-gradient(
+      rgba(206, 206, 206, 0.8),
+      rgba(206, 206, 206, 0.3)
+    );
+  }
+  h2 {
+    font-weight: 400;
+  }
+  > div {
+    background: linear-gradient(
+      rgba(227, 227, 227, 0.8),
+      rgba(227, 227, 227, 0)
+    );
+    box-shadow: 0 50px 100px -20px rgba(0, 0, 0, 0.1),
+      0 30px 60px -30px rgba(0, 0, 0, 0.15), 0 4px 4px 0 rgba(0, 0, 0, 0.015);
+    position: relative;
+    z-index: 2;
   }
 }

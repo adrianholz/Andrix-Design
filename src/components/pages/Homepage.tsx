@@ -4,27 +4,19 @@ import "swiper/css";
 import ServicesSection from "../ui/Homepage/ServicesSection/ServicesSection";
 import HeroSection from "../ui/Homepage/HeroSection/HeroSection";
 import AboutSection from "../ui/Homepage/AboutSection/AboutSection";
-import { useContext } from "react";
-import { ServiceContext } from "@/app/ServiceContext";
+import ProjectsSection from "../ui/Homepage/ProjectsSection/ProjectsSection";
+import Tooltip from "../ui/Tooltip";
+import TechSection from "../ui/Homepage/TechSection/TechSection";
 
 export default function Homepage() {
-  const {
-    titleRefs,
-    imageRefs,
-    service,
-    handleTitleChange,
-    blurRefs,
-    videoRef,
-    activeIndex,
-  } = useContext(ServiceContext)!;
-
   return (
     <>
+      <Tooltip />
       <HeroSection />
-
       <ServicesSection />
-
       <AboutSection />
+      <ProjectsSection />
+      <TechSection />
     </>
   );
 }
