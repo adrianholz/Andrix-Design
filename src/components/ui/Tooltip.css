@@ -11,4 +11,11 @@
   max-width: fit-content;
   line-height: 1.25rem;
   width: 100%;
+  white-space: nowrap;
+}
+
+@media (max-width: 1060px) {
+  .tooltip {
+    display: none;
+  }
 }

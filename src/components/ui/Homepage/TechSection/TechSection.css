@@ -30,3 +30,33 @@
     }
   }
 }
+
+@media (max-width: 760px) {
+  .techs {
+    .container {
+      padding: 20px 20px 40px 20px;
+      overflow-x: auto;
+      flex-wrap: nowrap;
+      justify-content: start;
+      max-width: 760px;
+      -webkit-overflow-scrolling: touch;
+      -ms-overflow-style: -ms-autohiding-scrollbar;
+      &::-webkit-scrollbar {
+        height: 8px;
+      }
+      &::-webkit-scrollbar-track {
+        background: var(--b1);
+      }
+      &::-webkit-scrollbar-thumb {
+        background: #454545;
+        border-radius: 15px;
+      }
+      &::-webkit-scrollbar-thumb:hover {
+        background: var(--w1);
+      }
+      .tech {
+        min-width: 50px;
+      }
+    }
+  }
+}

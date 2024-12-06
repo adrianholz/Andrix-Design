@@ -164,7 +164,6 @@ export const projects = [
         backgroundClip: "text",
         WebkitBackgroundClip: "text",
         WebkitTextFillColor: "transparent",
-        fontSize: "3rem",
         letterSpacing: "3px",
       },
     },

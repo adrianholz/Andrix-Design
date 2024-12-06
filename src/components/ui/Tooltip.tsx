@@ -47,10 +47,7 @@ export default function Tooltip() {
       setTooltipData((prev) => ({
         ...prev,
         top: event.pageY + 15,
-        left:
-          event.clientX < window.innerWidth * 0.5
-            ? event.pageX - 105
-            : event.pageX + 15,
+        left: event.pageX + 15,
       }));
     };
 

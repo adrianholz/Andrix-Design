@@ -24,3 +24,29 @@
     }
   }
 }
+
+@media (max-width: 1060px) {
+  .services {
+    .all-services {
+      > .title {
+        justify-content: center;
+        h3 {
+          font-size: 2rem;
+          text-align: center;
+          line-height: 2.5rem;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 760px) {
+  .services {
+    .all-services {
+      > .title {
+        flex-direction: column;
+        gap: 15px;
+      }
+    }
+  }
+}

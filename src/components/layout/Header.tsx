@@ -1,4 +1,4 @@
-import { useContext, useEffect, useRef } from "react";
+import { useContext, useEffect, useRef, useState } from "react";
 import "./Header.css";
 import Image from "next/image";
 import Link from "next/link";
@@ -9,8 +9,25 @@ import { ServiceContext } from "@/app/ServiceContext";
 
 export default function Header() {
   const { contact, setContact } = useContext(ContactContext)!;
+  const navRef = useRef<HTMLUListElement>(null);
   const contactRef = useRef<HTMLDivElement>(null);
   const { blurRefs } = useContext(ServiceContext)!;
+
+  const [menu, setMenu] = useState(false);
+  const [disableTransition, setDisableTransition] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setDisableTransition(true);
+      setTimeout(() => setDisableTransition(false), 50);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
 
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
@@ -20,16 +37,20 @@ export default function Header() {
       ) {
         setContact(false);
       }
+
+      if (navRef.current && !navRef.current.contains(event.target as Node)) {
+        setMenu(false);
+      }
     };
 
-    if (contact) {
+    if (contact || menu) {
       document.addEventListener("mousedown", handleClickOutside);
     }
 
     return () => {
       document.removeEventListener("mousedown", handleClickOutside);
     };
-  }, [contact, setContact]);
+  }, [contact, menu, setContact]);
 
   return (
     <>
@@ -44,8 +65,13 @@ export default function Header() {
             />
           </Link>
 
-          <nav>
-            <ul>
+          <nav
+            className={`
+              ${disableTransition ? "no-transition" : ""}
+              ${menu ? "mobile-active" : ""}
+            `}
+          >
+            <ul ref={navRef}>
               <li>
                 <Link href="/">Home</Link>
               </li>
@@ -70,7 +96,7 @@ export default function Header() {
             className="resume"
           >
             <img src="/assets/img/svg/resume.svg" alt="Resume" />
-            <p>My Resume</p>
+            <p>Resume</p>
             <div
               className="blur uxui active"
               ref={(el) => {
@@ -80,21 +106,26 @@ export default function Header() {
               }}
             ></div>
           </a>
+
+          <button
+            className="mobile-menu"
+            onClick={() => setMenu(true)}
+            aria-label="Menu"
+          ></button>
         </div>
       </header>
 
       <div
         className="contact-card"
-        style={
-          contact
-            ? { opacity: "1", pointerEvents: "unset" }
-            : { opacity: "0", pointerEvents: "none" }
-        }
+        style={{
+          opacity: contact ? "1" : "0",
+          pointerEvents: contact ? "unset" : "none",
+        }}
       >
         <Atropos
           shadowScale={1.05}
-          rotateYMax={10}
-          rotateXMax={10}
+          rotateYMax={7}
+          rotateXMax={7}
           className="contact-atropos"
           style={
             contact ? { transform: "scale(1)" } : { transform: "scale(0)" }

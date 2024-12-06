@@ -76,41 +76,47 @@ export default function ProjectsSection() {
                         <span>{project.title.secondName}</span>
                       ) : null}
                     </h3>
-                    {project.description.split("<br />").map((line, index) => (
-                      <p key={index}>{line}</p>
-                    ))}
-                  </div>
-                  <div className="colors">
-                    <span>Color Palette</span>
-                    <div className="boxes">
-                      {project.colors.map((color, index) => (
-                        <div
-                          key={index}
-                          style={{ background: `#${color.color}` }}
-                          data-value={`#${color.color}`}
-                          data-background={`#${color.color}`}
-                          data-color={`#${color.font}`}
-                        ></div>
-                      ))}
+                    <div className="description">
+                      {project.description
+                        .split("<br />")
+                        .map((line, index) => (
+                          <p key={index}>{line}</p>
+                        ))}
                     </div>
                   </div>
-                  <div className="technologies">
-                    <div>
-                      <span>Technologies</span>
-                      <div className="icons">
-                        {project.technologies.map((technology, index) => (
-                          <div key={index} data-value={`${technology}`}>
-                            <img
-                              src={`/assets/img/svg/${technology
-                                .toLowerCase()
-                                .replaceAll(" ", "-")}.svg`}
-                              alt=""
-                            />
-                          </div>
+                  <div className="details">
+                    <div className="colors">
+                      <span>Color Palette</span>
+                      <div className="boxes">
+                        {project.colors.map((color, index) => (
+                          <div
+                            key={index}
+                            style={{ background: `#${color.color}` }}
+                            data-value={`#${color.color}`}
+                            data-background={`#${color.color}`}
+                            data-color={`#${color.font}`}
+                          ></div>
                         ))}
                       </div>
                     </div>
-                    <Link href="#">View Project</Link>
+                    <div className="technologies">
+                      <div>
+                        <span>Technologies</span>
+                        <div className="icons">
+                          {project.technologies.map((technology, index) => (
+                            <div key={index} data-value={`${technology}`}>
+                              <img
+                                src={`/assets/img/svg/${technology
+                                  .toLowerCase()
+                                  .replaceAll(" ", "-")}.svg`}
+                                alt=""
+                              />
+                            </div>
+                          ))}
+                        </div>
+                      </div>
+                      <Link href="#">View Project</Link>
+                    </div>
                   </div>
                 </div>
                 <img

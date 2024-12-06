@@ -196,3 +196,139 @@
     transform: scale(0.8);
   }
 }
+
+@keyframes pulse-mobile {
+  0% {
+    transform: scale(0.5);
+  }
+  100% {
+    transform: scale(0.7);
+  }
+}
+
+@media (max-width: 1400px) {
+  .services {
+    background-size: cover, 1100px;
+    background-position: top, bottom -130px right -240px;
+  }
+}
+
+@media (max-width: 1060px) {
+  .services {
+    background-size: cover, 1000px;
+    background-position: top, bottom -120px right -240px;
+    .content {
+      padding: 40px 20px;
+    }
+    .service-description {
+      margin: 0 auto;
+      text-align: center;
+    }
+    .services-wrapper {
+      grid-template-columns: 1fr;
+      .window {
+        border-radius: 20px 20px 0 0;
+      }
+      .nav {
+        display: flex;
+        overflow-x: auto;
+        padding-bottom: 20px;
+        -webkit-overflow-scrolling: touch;
+        -ms-overflow-style: -ms-autohiding-scrollbar;
+        &::-webkit-scrollbar {
+          height: 8px;
+        }
+        &::-webkit-scrollbar-track {
+          background: #d3d3d3;
+        }
+        &::-webkit-scrollbar-thumb {
+          background: #aaa;
+          border-radius: 15px;
+        }
+        &::-webkit-scrollbar-thumb:hover {
+          background: var(--b1);
+        }
+        > div {
+          border-radius: 0 0 20px 20px;
+          min-width: 230px;
+        }
+      }
+      .window {
+        .window-inner {
+          .title {
+            justify-content: center;
+            gap: 20px;
+            padding: 10px 20px;
+            background: var(--b2);
+          }
+          p {
+            margin: 0 auto;
+            max-width: 595px;
+          }
+          .blur {
+            bottom: -90px;
+          }
+          .blur.active {
+            animation: pulse-mobile 2s ease alternate infinite;
+          }
+        }
+        .process {
+          justify-content: center;
+          p {
+            max-width: 360px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 740px) {
+  .services {
+    .service-description {
+      padding-bottom: 0;
+      font-size: 1rem;
+      text-align: left;
+    }
+    .services-wrapper {
+      .window {
+        .window-inner {
+          .title {
+            div {
+              display: none;
+            }
+            h2 {
+              font-size: clamp(2.75rem, 10vw, 3rem);
+              text-align: center;
+              line-height: 3.75rem;
+              span {
+                font-size: clamp(3.25rem, 10vw, 4rem);
+              }
+            }
+          }
+          p {
+            font-size: 1rem;
+          }
+        }
+        .process {
+          flex-direction: column;
+          justify-content: center;
+          span {
+            display: block;
+            text-align: center;
+          }
+          p {
+            font-size: 1rem;
+            max-width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 520px) {
+  .services {
+    padding-top: 340px;
+  }
+}

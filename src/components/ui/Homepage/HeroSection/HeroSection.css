@@ -10,7 +10,7 @@
     justify-content: center;
     align-items: center;
     > span {
-      font-size: 1.75rem;
+      font-size: clamp(8px, 5vw, 1.75rem);
       text-transform: uppercase;
       color: var(--w1);
       text-align: center;
@@ -19,7 +19,7 @@
   h1 {
     font-weight: 900;
     text-transform: uppercase;
-    font-size: 6rem;
+    font-size: clamp(25px, 16vw, 6rem);
     line-height: 1em;
     position: relative;
     z-index: 2;
@@ -135,5 +135,58 @@
   }
   100% {
     transform: translate3d(0, 0, 0);
+  }
+}
+
+@media (max-width: 940px) {
+  .hero {
+    .container {
+      padding: 140px 20px 300px;
+    }
+    h1 {
+      span {
+        display: block;
+        overflow: hidden;
+      }
+    }
+    .orbit {
+      order: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-top: 30px;
+      gap: 20px 40px;
+      position: unset;
+      min-height: 55px;
+      .orbit-rings {
+        display: none;
+      }
+      .orbit-image {
+        margin: 0;
+        position: unset;
+        transform: unset;
+        animation: none;
+      }
+    }
+  }
+}
+
+@media (max-width: 710px) {
+  .hero {
+    .swiper {
+      bottom: -230px;
+    }
+  }
+}
+
+@media (max-width: 520px) {
+  .hero {
+    .container {
+      padding-bottom: 340px;
+    }
+    .swiper {
+      bottom: -270px;
+    }
   }
 }

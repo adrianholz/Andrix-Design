@@ -21,7 +21,10 @@ export default function Interfaces() {
           </div>
         ))}
       </div>
-      <div className="interface-preview" style={box.styles.preview}>
+      <div
+        className={`interface-preview ${box.title.toLowerCase()}`}
+        style={box.styles.preview}
+      >
         <div className="preview-image" style={box.styles.previewImage}></div>
         <div className="preview-content" style={box.styles?.content}>
           <span style={box.styles.title}>This is a heading</span>
