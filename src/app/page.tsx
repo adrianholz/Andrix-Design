@@ -3,7 +3,7 @@
 import Footer from "@/components/layout/Footer";
 import Header from "@/components/layout/Header";
 import Marquee from "@/components/ui/Marquee";
-import Homepage from "@/components/pages/Homepage";
+import HomePage from "@/components/pages/HomePage";
 import { ServiceContextProvider } from "./ServiceContext";
 import { ContactContextProvider } from "./ContactContext";
 
@@ -14,7 +14,7 @@ export default function Home() {
       <ContactContextProvider>
         <ServiceContextProvider>
           <Header />
-          <Homepage />
+          <HomePage />
           <Footer />
         </ServiceContextProvider>
       </ContactContextProvider>

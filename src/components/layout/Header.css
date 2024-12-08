@@ -1,6 +1,8 @@
 header {
   background: var(--b2);
   .container {
+    position: relative;
+    z-index: 5;
     padding: 30px 20px;
     display: flex;
     gap: 20px;
@@ -273,6 +275,27 @@ header {
     .mobile-menu {
       display: block;
       margin: 0 20px;
+    }
+  }
+}
+
+@media (max-width: 710px) {
+  .contact-card {
+    .card-inner {
+      .title {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+        .info {
+          h2 {
+            line-height: 1.75rem;
+          }
+        }
+      }
+      .links {
+        flex-wrap: wrap;
+        gap: 20px 30px;
+      }
     }
   }
 }

@@ -26,7 +26,7 @@ export default function Services({
     <div className="services-wrapper">
       <div className="window">
         <div className="video-transition" ref={videoRef}>
-          <video muted src="/assets/video/intro.mp4"></video>
+          <video muted src="/assets/video/intro.mp4" playsInline></video>
         </div>
         <div
           style={{
