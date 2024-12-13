@@ -58,6 +58,7 @@
     box-shadow: 0 0 0 rgba(17, 17, 26, 0.1), 0 0 12px rgba(17, 17, 26, 0.1),
       0 0 24px rgba(17, 17, 26, 0.1);
     color: var(--b2);
+    box-sizing: content-box;
     padding: 40px 25px;
     border-radius: 20px;
     min-width: 300px;

@@ -7,7 +7,7 @@ import Atropos from "atropos/react";
 import { ContactContext } from "@/app/ContactContext";
 import { ServiceContext } from "@/app/ServiceContext";
 
-export default function Header() {
+export default function Header({ type }: { type?: string }) {
   const { contact, setContact } = useContext(ContactContext)!;
   const navRef = useRef<HTMLUListElement>(null);
   const contactRef = useRef<HTMLDivElement>(null);
@@ -76,7 +76,7 @@ export default function Header() {
                 <Link href="/">Home</Link>
               </li>
               <li>
-                <Link href="/">Projects</Link>
+                <Link href="/projects">Projects</Link>
               </li>
               <li>
                 <Link href="/about">About me</Link>
@@ -98,7 +98,7 @@ export default function Header() {
             <img src="/assets/img/svg/resume.svg" alt="Resume" />
             <p>Resume</p>
             <div
-              className="blur uxui active"
+              className={`blur ${type ? type : "uxui"} active`}
               ref={(el) => {
                 if (el && blurRefs.current) {
                   blurRefs.current[4] = el;
@@ -180,7 +180,7 @@ export default function Header() {
               data-atropos-offset="-5"
             />
             <div
-              className="blur uxui active"
+              className={`blur ${type ? type : "uxui"} active`}
               data-atropos-offset="-5"
               ref={(el) => {
                 if (el && blurRefs.current) {

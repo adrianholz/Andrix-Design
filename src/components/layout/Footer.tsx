@@ -5,7 +5,7 @@ import { useContext } from "react";
 import { ServiceContext } from "@/app/ServiceContext";
 import { ContactContext } from "@/app/ContactContext";
 
-export default function Footer() {
+export default function Footer({ type }: { type?: string }) {
   const { blurRefs } = useContext(ServiceContext)!;
   const { setContact } = useContext(ContactContext)!;
 
@@ -93,7 +93,7 @@ export default function Footer() {
         </div>
       </div>
       <div
-        className="blur uxui active"
+        className={`blur ${type ? type : "uxui"} active`}
         ref={(el) => {
           if (el && blurRefs.current) {
             blurRefs.current[0] = el;

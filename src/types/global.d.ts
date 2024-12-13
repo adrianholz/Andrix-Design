@@ -6,6 +6,12 @@ declare global {
     process: string;
     position: string;
   };
+  type Tags = {
+    search: string;
+    scale: string[];
+    category: string[];
+    technology: string[];
+  };
 }
 
 export {};

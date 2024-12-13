@@ -38,7 +38,7 @@ export default function ProjectsSection() {
           speed={800}
           grabCursor={true}
         >
-          {projects.map((project, index) => (
+          {projects.slice(0, 5).map((project, index) => (
             <SwiperSlide key={index}>
               <div
                 className="project"
@@ -52,7 +52,7 @@ export default function ProjectsSection() {
                   className="cover"
                   style={
                     project.video === false
-                      ? { backgroundImage: `${project.preview}` }
+                      ? { backgroundImage: `url(${project.preview})` }
                       : undefined
                   }
                 >
@@ -70,18 +70,16 @@ export default function ProjectsSection() {
                 </div>
                 <div className="info">
                   <div className="title">
-                    <h3 style={project.title.style}>
+                    <h3 style={project.title.styleLight}>
                       {project.title.name}
                       {project.title.secondName ? (
                         <span>{project.title.secondName}</span>
                       ) : null}
                     </h3>
                     <div className="description">
-                      {project.description
-                        .split("<br />")
-                        .map((line, index) => (
-                          <p key={index}>{line}</p>
-                        ))}
+                      {project.description.map((text, index) => (
+                        <p key={index}>{text}</p>
+                      ))}
                     </div>
                   </div>
                   <div className="details">

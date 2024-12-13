@@ -4,6 +4,7 @@ export const services = [
   {
     name: "UX/UI Design",
     file: "uxui",
+    short: "UX/UI",
     description:
       "Ignite engagement with tailored UX/UI solutions. Elevate conversions with designs crafted for success. Captivate your audience; let's guide your digital journey towards maximum impact and user satisfaction.",
     process:
@@ -13,6 +14,7 @@ export const services = [
   {
     name: "Digital Artwork",
     file: "artwork",
+    short: "Artwork",
     description:
       "Ignite engagement with tailored UX/UI solutions. Elevate conversions with designs crafted for success. Captivate your audience; let's guide your digital journey towards maximum impact and user satisfaction.",
     process:
@@ -22,6 +24,7 @@ export const services = [
   {
     name: "Brand Redesign",
     file: "brand",
+    short: "Brand",
     description:
       "Ignite engagement with tailored UX/UI solutions. Elevate conversions with designs crafted for success. Captivate your audience; let's guide your digital journey towards maximum impact and user satisfaction.",
     process:
@@ -31,6 +34,7 @@ export const services = [
   {
     name: "Social Media",
     file: "social",
+    short: "Social",
     description:
       "Ignite engagement with tailored UX/UI solutions. Elevate conversions with designs crafted for success. Captivate your audience; let's guide your digital journey towards maximum impact and user satisfaction.",
     process:
@@ -40,6 +44,7 @@ export const services = [
   {
     name: "Package Design",
     file: "packaging",
+    short: "Packaging",
     description:
       "Ignite engagement with tailored UX/UI solutions. Elevate conversions with designs crafted for success. Captivate your audience; let's guide your digital journey towards maximum impact and user satisfaction.",
     process:
@@ -49,6 +54,7 @@ export const services = [
   {
     name: "Video Editing",
     file: "video",
+    short: "Video",
     description:
       "Ignite engagement with tailored UX/UI solutions. Elevate conversions with designs crafted for success. Captivate your audience; let's guide your digital journey towards maximum impact and user satisfaction.",
     process:
@@ -158,7 +164,7 @@ export const projects = [
     title: {
       name: "Retroverse",
       secondName: "",
-      style: {
+      styleLight: {
         fontFamily: "var(--font-vudotronic)",
         background: "-webkit-linear-gradient(#232323, #161616)",
         backgroundClip: "text",
@@ -166,9 +172,20 @@ export const projects = [
         WebkitTextFillColor: "transparent",
         letterSpacing: "3px",
       },
+      styleDark: {
+        fontFamily: "var(--font-vudotronic)",
+        background: "-webkit-linear-gradient(#ffffff, #aaaaaa)",
+        backgroundClip: "text",
+        WebkitBackgroundClip: "text",
+        WebkitTextFillColor: "transparent",
+        letterSpacing: "3px",
+      },
     },
-    description:
-      "Manually coded website focused on organic traffic. Integrated with WordPress for the managing of all interface content. <br /> Manually coded website focused on organic traffic. Integrated with WordPress for the managing of all interface content.",
+    description: [
+      "Manually coded website focused on organic traffic. Integrated with WordPress for the managing of all interface content.",
+      "Manually coded website focused on organic traffic. Integrated with WordPress for the managing of all interface content.",
+    ],
+    scale: "Major Project",
     video: true,
     preview: "/assets/video/retroverse.webm",
     type: "uxui",
@@ -189,10 +206,13 @@ export const projects = [
         fontFamily: "var(--font-livvic)",
       },
     },
-    description:
-      "Manually coded website focused on organic traffic. Integrated with WordPress for the managing of all interface content. <br /> Manually coded website focused on organic traffic. Integrated with WordPress for the managing of all interface content.",
+    description: [
+      "Manually coded website focused on organic traffic. Integrated with WordPress for the managing of all interface content.",
+      "Manually coded website focused on organic traffic. Integrated with WordPress for the managing of all interface content.",
+    ],
+    scale: "Major Project",
     video: false,
-    preview: "url(/assets/img/webp/dogresort.webp)",
+    preview: "/assets/img/webp/dogresort.webp",
     type: "uxui",
     colors: [
       { color: "97CA49", font: "FFFFFF" },
@@ -209,12 +229,16 @@ export const projects = [
       secondName: " Concept",
       style: {
         fontFamily: "var(--font-poppins)",
+        lineHeight: "2rem",
       },
     },
-    description:
-      "Manually coded website focused on organic traffic. Integrated with WordPress for the managing of all interface content. <br /> Manually coded website focused on organic traffic. Integrated with WordPress for the managing of all interface content.",
+    description: [
+      "Manually coded website focused on organic traffic. Integrated with WordPress for the managing of all interface content.",
+      "Manually coded website focused on organic traffic. Integrated with WordPress for the managing of all interface content.",
+    ],
+    scale: "Minor Project",
     video: false,
-    preview: "url(/assets/img/webp/nike.webp)",
+    preview: "/assets/img/webp/nike.webp",
     type: "uxui",
     colors: [
       { color: "97CA49", font: "FFFFFF" },
@@ -224,5 +248,158 @@ export const projects = [
       { color: "1E37B8", font: "FFFFFF" },
     ],
     technologies: ["Figma", "Photoshop", "Illustrator"],
+  },
+  {
+    title: {
+      name: "Nike",
+      secondName: " Concept",
+      style: {
+        fontFamily: "var(--font-poppins)",
+        lineHeight: "2rem",
+      },
+    },
+    description: [
+      "Manually coded website focused on organic traffic. Integrated with WordPress for the managing of all interface content.",
+      "Manually coded website focused on organic traffic. Integrated with WordPress for the managing of all interface content.",
+    ],
+    scale: "Minor Project",
+    video: false,
+    preview: "/assets/img/webp/nike.webp",
+    type: "uxui",
+    colors: [
+      { color: "97CA49", font: "FFFFFF" },
+      { color: "FFA307", font: "FFFFFF" },
+      { color: "FFCCC3", font: "161616" },
+      { color: "47C8F3", font: "FFFFFF" },
+      { color: "1E37B8", font: "FFFFFF" },
+    ],
+    technologies: ["Figma", "Photoshop", "Illustrator"],
+  },
+  {
+    title: {
+      name: "Nike",
+      secondName: " Concept",
+      style: {
+        fontFamily: "var(--font-poppins)",
+        lineHeight: "2rem",
+      },
+    },
+    description: [
+      "Manually coded website focused on organic traffic. Integrated with WordPress for the managing of all interface content.",
+      "Manually coded website focused on organic traffic. Integrated with WordPress for the managing of all interface content.",
+    ],
+    scale: "Minor Project",
+    video: false,
+    preview: "/assets/img/webp/nike.webp",
+    type: "uxui",
+    colors: [
+      { color: "97CA49", font: "FFFFFF" },
+      { color: "FFA307", font: "FFFFFF" },
+      { color: "FFCCC3", font: "161616" },
+      { color: "47C8F3", font: "FFFFFF" },
+      { color: "1E37B8", font: "FFFFFF" },
+    ],
+    technologies: ["Figma", "Photoshop", "Illustrator"],
+  },
+  {
+    title: {
+      name: "Nike",
+      secondName: " Concept",
+      style: {
+        fontFamily: "var(--font-poppins)",
+        lineHeight: "2rem",
+      },
+    },
+    description: [
+      "Manually coded website focused on organic traffic. Integrated with WordPress for the managing of all interface content.",
+      "Manually coded website focused on organic traffic. Integrated with WordPress for the managing of all interface content.",
+    ],
+    scale: "Minor Project",
+    video: false,
+    preview: "/assets/img/webp/nike.webp",
+    type: "uxui",
+    colors: [
+      { color: "97CA49", font: "FFFFFF" },
+      { color: "FFA307", font: "FFFFFF" },
+      { color: "FFCCC3", font: "161616" },
+      { color: "47C8F3", font: "FFFFFF" },
+      { color: "1E37B8", font: "FFFFFF" },
+    ],
+    technologies: ["Figma", "Photoshop", "Illustrator"],
+  },
+];
+
+export const tools = [
+  {
+    name: "Photoshop",
+    blur: "#75b2df",
+    drop: "#0091ff70",
+    link: "https://www.adobe.com/products/photoshop.html",
+  },
+  {
+    name: "Illustrator",
+    blur: "#e04e39",
+    drop: "#ff620070",
+    link: "https://www.adobe.com/ca/products/illustrator.html",
+  },
+  {
+    name: "InDesign",
+    blur: "#fd4684",
+    drop: "#fd468470",
+    link: "https://www.adobe.com/ca/products/indesign.html",
+  },
+  {
+    name: "Premiere Pro",
+    blur: "#6f53fc",
+    drop: "#6f53fc70",
+    link: "https://www.adobe.com/products/premiere.html",
+  },
+  {
+    name: "After Effects",
+    blur: "#6f53fc",
+    drop: "#6f53fc70",
+    link: "https://www.adobe.com/products/aftereffects.html",
+  },
+  {
+    name: "Lightroom",
+    blur: "#75b2df",
+    drop: "#0091ff70",
+    link: "https://www.adobe.com/ca/products/photoshop-lightroom.html",
+  },
+  {
+    name: "Adobe XD",
+    blur: "#fd4684",
+    drop: "#ff3bf270",
+    link: "https://www.adobe.com/products/xd.html",
+  },
+  {
+    name: "Vegas Pro",
+    blur: "#4297ff",
+    drop: "#4297ff70",
+    link: "https://www.vegascreativesoftware.com/us/vegas-pro/",
+  },
+  {
+    name: "Figma",
+    blur: "#75b2df",
+    drop: "#0091ff70",
+    link: "https://www.figma.com",
+  },
+  {
+    name: "Axure RP",
+    blur: "#75b2df",
+    drop: "#2be04070",
+    link: "https://www.axure.com",
+  },
+  {
+    name: "Coreldraw",
+    blur: "#75b2df",
+    drop: "#ffef0070",
+    link: "https://www.coreldraw.com",
+  },
+  {
+    name: "Davinci Resolve",
+    blur: "#75b2df",
+    drop: "#ffffff70",
+    link: "https://www.blackmagicdesign.com/products/davinciresolve/",
   },
 ];
