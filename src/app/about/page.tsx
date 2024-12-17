@@ -17,6 +17,7 @@ export default function About() {
             page="About me"
             title="Andrix Design"
             time="30s"
+            reverse={false}
           />
           <Header />
           <AboutPage />
@@ -26,6 +27,7 @@ export default function About() {
             page="About me"
             title="Andrix Design"
             time="30s"
+            reverse={true}
           />
         </ServiceContextProvider>
       </ContactContextProvider>

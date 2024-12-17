@@ -197,6 +197,68 @@ export const projects = [
       { color: "AAAAAA", font: "161616" },
     ],
     technologies: ["Figma", "Photoshop", "Premiere Pro"],
+    page: [
+      {
+        title: "HeroSection",
+        description: "This is the Retroverse. Lorem Ipsum dolor sit amet.",
+        call: [
+          {
+            name: "View on GitHub",
+            link: "https://github.com/adrianholz/Retroverse",
+          },
+          {
+            name: "Download",
+            link: "https://github.com/adrianholz/Retroverse",
+          },
+        ],
+      },
+      {
+        title: "MetaSection",
+        objective: "Made for Client",
+        duration: "14 days (2 weeks)",
+        status: "Finished & Developed",
+      },
+      {
+        title: "DescriptionSection",
+        heading: "This is the Retroverse.",
+        theme: "light",
+        position: "left",
+        video: false,
+        animation: false,
+        preview: "/assets/img/png/retroverse-preview.png",
+        text: [
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.",
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.",
+        ],
+      },
+      {
+        title: "DescriptionSection",
+        heading: "This is the Retroverse.",
+        theme: "dark",
+        position: "right",
+        video: true,
+        animation: false,
+        preview: "/assets/video/retroverse.webm",
+        text: [
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.",
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.",
+        ],
+      },
+      {
+        title: "DescriptionSection",
+        heading: "This is the Retroverse.",
+        theme: "light",
+        position: "left",
+        video: true,
+        animation: false,
+        preview: "/assets/video/retroverse.webm",
+        text: [
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.",
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.",
+        ],
+      },
+      { title: "DesignSection" },
+    ],
   },
   {
     title: {
@@ -222,6 +284,38 @@ export const projects = [
       { color: "1E37B8", font: "FFFFFF" },
     ],
     technologies: ["Figma", "Photoshop", "Illustrator"],
+    page: [
+      {
+        title: "HeroSection",
+        description: "This is the DogResort. Lorem Ipsum dolor sit amet.",
+        call: [
+          {
+            name: "View Live Demo",
+            link: "https://www.dogresort.com.br",
+          },
+        ],
+      },
+      {
+        title: "MetaSection",
+        objective: "Made for Client",
+        duration: "14 days (2 weeks)",
+        status: "Finished & Developed",
+      },
+      {
+        title: "DescriptionSection",
+        heading: "This is the Retroverse.",
+        theme: "light",
+        position: "right",
+        video: false,
+        animation: false,
+        preview: "/assets/img/png/retroverse-preview.png",
+        text: [
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.",
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.",
+        ],
+      },
+      { title: "DesignSection" },
+    ],
   },
   {
     title: {
@@ -248,84 +342,38 @@ export const projects = [
       { color: "1E37B8", font: "FFFFFF" },
     ],
     technologies: ["Figma", "Photoshop", "Illustrator"],
-  },
-  {
-    title: {
-      name: "Nike",
-      secondName: " Concept",
-      style: {
-        fontFamily: "var(--font-poppins)",
-        lineHeight: "2rem",
+    page: [
+      { title: "DesignSection" },
+      {
+        title: "HeroSection",
+        description: "This is the Nike Concept. Lorem Ipsum dolor sit amet.",
+        call: [
+          {
+            name: "View Live Demo",
+            link: "https://github.com/adrianholz/Retroverse",
+          },
+        ],
       },
-    },
-    description: [
-      "Manually coded website focused on organic traffic. Integrated with WordPress for the managing of all interface content.",
-      "Manually coded website focused on organic traffic. Integrated with WordPress for the managing of all interface content.",
-    ],
-    scale: "Minor Project",
-    video: false,
-    preview: "/assets/img/webp/nike.webp",
-    type: "uxui",
-    colors: [
-      { color: "97CA49", font: "FFFFFF" },
-      { color: "FFA307", font: "FFFFFF" },
-      { color: "FFCCC3", font: "161616" },
-      { color: "47C8F3", font: "FFFFFF" },
-      { color: "1E37B8", font: "FFFFFF" },
-    ],
-    technologies: ["Figma", "Photoshop", "Illustrator"],
-  },
-  {
-    title: {
-      name: "Nike",
-      secondName: " Concept",
-      style: {
-        fontFamily: "var(--font-poppins)",
-        lineHeight: "2rem",
+      {
+        title: "MetaSection",
+        objective: "Made for Client",
+        duration: "14 days (2 weeks)",
+        status: "Finished & Developed",
       },
-    },
-    description: [
-      "Manually coded website focused on organic traffic. Integrated with WordPress for the managing of all interface content.",
-      "Manually coded website focused on organic traffic. Integrated with WordPress for the managing of all interface content.",
-    ],
-    scale: "Minor Project",
-    video: false,
-    preview: "/assets/img/webp/nike.webp",
-    type: "uxui",
-    colors: [
-      { color: "97CA49", font: "FFFFFF" },
-      { color: "FFA307", font: "FFFFFF" },
-      { color: "FFCCC3", font: "161616" },
-      { color: "47C8F3", font: "FFFFFF" },
-      { color: "1E37B8", font: "FFFFFF" },
-    ],
-    technologies: ["Figma", "Photoshop", "Illustrator"],
-  },
-  {
-    title: {
-      name: "Nike",
-      secondName: " Concept",
-      style: {
-        fontFamily: "var(--font-poppins)",
-        lineHeight: "2rem",
+      {
+        title: "DescriptionSection",
+        heading: "This is the Retroverse.",
+        theme: "light",
+        position: "left",
+        video: false,
+        animation: true,
+        preview: "/assets/img/webp/nike.webp",
+        text: [
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.",
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.",
+        ],
       },
-    },
-    description: [
-      "Manually coded website focused on organic traffic. Integrated with WordPress for the managing of all interface content.",
-      "Manually coded website focused on organic traffic. Integrated with WordPress for the managing of all interface content.",
     ],
-    scale: "Minor Project",
-    video: false,
-    preview: "/assets/img/webp/nike.webp",
-    type: "uxui",
-    colors: [
-      { color: "97CA49", font: "FFFFFF" },
-      { color: "FFA307", font: "FFFFFF" },
-      { color: "FFCCC3", font: "161616" },
-      { color: "47C8F3", font: "FFFFFF" },
-      { color: "1E37B8", font: "FFFFFF" },
-    ],
-    technologies: ["Figma", "Photoshop", "Illustrator"],
   },
 ];
 

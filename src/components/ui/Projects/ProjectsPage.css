@@ -9,3 +9,12 @@
     grid-template-columns: 400px 800px;
   }
 }
+
+@media (max-width: 1260px) {
+  .projects-page {
+    .container {
+      max-width: 800px;
+      display: block;
+    }
+  }
+}

@@ -1,3 +1,4 @@
+import { CSSProperties } from "react";
 import "./Marquee.css";
 
 type MarqueeProps = {
@@ -5,9 +6,16 @@ type MarqueeProps = {
   title: string;
   page?: string;
   time: string;
+  reverse: boolean;
 };
 
-export default function Marquee({ gap, title, page, time }: MarqueeProps) {
+export default function Marquee({
+  gap,
+  title,
+  page,
+  time,
+  reverse,
+}: MarqueeProps) {
   return (
     <div
       className="marquee"
@@ -19,7 +27,10 @@ export default function Marquee({ gap, title, page, time }: MarqueeProps) {
       }
       aria-hidden="true"
     >
-      <div className="marquee-content">
+      <div
+        className="marquee-content"
+        style={reverse ? { animationDirection: "reverse" } : {}}
+      >
         <span>{page} • </span>
         <span>{title} • </span>
         <span>{page} • </span>
@@ -27,7 +38,10 @@ export default function Marquee({ gap, title, page, time }: MarqueeProps) {
         <span>{page} • </span>
         <span>{title} • </span>
       </div>
-      <div className="marquee-content">
+      <div
+        className="marquee-content"
+        style={reverse ? { animationDirection: "reverse" } : {}}
+      >
         <span>{page} • </span>
         <span>{title} • </span>
         <span>{page} • </span>

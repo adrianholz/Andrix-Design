@@ -10,7 +10,13 @@ import { ContactContextProvider } from "./ContactContext";
 export default function Home() {
   return (
     <>
-      <Marquee gap="10px" page="Homepage" title="Andrix Design" time="30s" />
+      <Marquee
+        gap="10px"
+        page="Homepage"
+        title="Andrix Design"
+        time="30s"
+        reverse={false}
+      />
       <ContactContextProvider>
         <ServiceContextProvider>
           <Header />
@@ -18,7 +24,13 @@ export default function Home() {
           <Footer />
         </ServiceContextProvider>
       </ContactContextProvider>
-      <Marquee gap="10px" page="Homepage" title="Andrix Design" time="30s" />
+      <Marquee
+        gap="10px"
+        page="Homepage"
+        title="Andrix Design"
+        time="30s"
+        reverse={true}
+      />
     </>
   );
 }

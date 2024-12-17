@@ -56,3 +56,40 @@
     }
   }
 }
+
+@media (max-width: 1260px) {
+  .filters {
+    > div {
+      border-radius: 20px 20px 0 0;
+    }
+  }
+}
+
+@media (max-width: 860px) {
+  .filters {
+    > div {
+      gap: 20px;
+    }
+    .category-filter {
+      justify-content: start;
+      overflow-x: auto;
+      flex-wrap: nowrap;
+      -webkit-overflow-scrolling: touch;
+      -ms-overflow-style: -ms-autohiding-scrollbar;
+      padding-bottom: 10px;
+      &::-webkit-scrollbar {
+        height: 8px;
+      }
+      &::-webkit-scrollbar-track {
+        background: #d3d3d3;
+      }
+      &::-webkit-scrollbar-thumb {
+        background: #aaa;
+        border-radius: 15px;
+      }
+      &::-webkit-scrollbar-thumb:hover {
+        background: var(--b1);
+      }
+    }
+  }
+}
