@@ -6,9 +6,9 @@ export const services = [
     file: "uxui",
     short: "UX/UI",
     description:
-      "Ignite engagement with tailored UX/UI solutions. Elevate conversions with designs crafted for success. Captivate your audience; let's guide your digital journey towards maximum impact and user satisfaction.",
+      "Leverage the power of colors, typography, spacing and form to create the experience you desire for your users. Every single element and detail of your interface should have intention and purpose. So let's make them count.",
     process:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
+      "The first step of every UX/UI project is understanding the project's goals and target audience. This is followed by research, wireframing, prototyping, and a continuous testing process with potential users.",
     position: "bottom -70px right -80px",
   },
   {
@@ -16,19 +16,19 @@ export const services = [
     file: "artwork",
     short: "Artwork",
     description:
-      "Ignite engagement with tailored UX/UI solutions. Elevate conversions with designs crafted for success. Captivate your audience; let's guide your digital journey towards maximum impact and user satisfaction.",
+      "With so little time to capture your audience's attention, you need to make sure your visuals are on point. That's what maximizes conversions and makes your brand stand out. Let's make it happen with stunning digital design.",
     process:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "After reviewing the project's requirements, we start by creating a mood board to set the visual direction. Then it's time to sketch and make sure we got the right concept before applying the textures and adjustments.",
     position: "bottom -70px right -80px",
   },
   {
-    name: "Brand Redesign",
+    name: "Visual Identity",
     file: "brand",
     short: "Brand",
     description:
-      "Ignite engagement with tailored UX/UI solutions. Elevate conversions with designs crafted for success. Captivate your audience; let's guide your digital journey towards maximum impact and user satisfaction.",
+      "Communication is key. By defining rules and foundations for designing your company's projects, we convey your ideas, values, and purposes. Visual identity brings your brand to life and also enhances client relationship.",
     process:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "Starting out by analyzing your target audience and your brand's core values, we craft an effective logo design and proceed to choosing the brand's color palette, typography and imagery.",
     position: "bottom -70px right -80px",
   },
   {
@@ -36,9 +36,9 @@ export const services = [
     file: "social",
     short: "Social",
     description:
-      "Ignite engagement with tailored UX/UI solutions. Elevate conversions with designs crafted for success. Captivate your audience; let's guide your digital journey towards maximum impact and user satisfaction.",
+      "The digital space couldn't get more crowded nowadays. An effective social media strategy means that you can engage and, most importantly, retain your audience. Reach out to your audience and communicate with confidence.",
     process:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "The first step is to determine what do you want to communicate and to whom. Then we create post prototypes based on your brand identity, refine them, and publish consistently, always keeping track of the results.",
     position: "bottom -70px right -80px",
   },
   {
@@ -46,9 +46,9 @@ export const services = [
     file: "packaging",
     short: "Packaging",
     description:
-      "Ignite engagement with tailored UX/UI solutions. Elevate conversions with designs crafted for success. Captivate your audience; let's guide your digital journey towards maximum impact and user satisfaction.",
+      "Your products deserve the same love as your digital content. Packaging design is there to make sure that, besides being functional, your products stand out on the shelves and in your customers' minds.",
     process:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "We first have to determine the shape and size of the package, and in which material it will be applied to. Then we analyze the product itself and how we can convey, visually, the experience that's inside of the package.",
     position: "bottom -70px right -80px",
   },
   {
@@ -56,9 +56,9 @@ export const services = [
     file: "video",
     short: "Video",
     description:
-      "Ignite engagement with tailored UX/UI solutions. Elevate conversions with designs crafted for success. Captivate your audience; let's guide your digital journey towards maximum impact and user satisfaction.",
+      "Having quality content also means having the possibility of refining it and turning it into something even more engaging. With video editing, turn your raw footage into a polished and professional visual experience.",
     process:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "After sharing the raw material, we start by selecting the media that will be used, and then proceed to the stage of adding transitions, effects, color correction, masking and subtitles. Final step is exporting.",
     position: "bottom -70px right -80px",
   },
 ];
@@ -158,224 +158,6 @@ export const boxes = [
     button: CSSProperties;
   };
 }[];
-
-export const projects = [
-  {
-    title: {
-      name: "Retroverse",
-      secondName: "",
-      styleLight: {
-        fontFamily: "var(--font-vudotronic)",
-        background: "-webkit-linear-gradient(#232323, #161616)",
-        backgroundClip: "text",
-        WebkitBackgroundClip: "text",
-        WebkitTextFillColor: "transparent",
-        letterSpacing: "3px",
-      },
-      styleDark: {
-        fontFamily: "var(--font-vudotronic)",
-        background: "-webkit-linear-gradient(#ffffff, #aaaaaa)",
-        backgroundClip: "text",
-        WebkitBackgroundClip: "text",
-        WebkitTextFillColor: "transparent",
-        letterSpacing: "3px",
-      },
-    },
-    description: [
-      "Manually coded website focused on organic traffic. Integrated with WordPress for the managing of all interface content.",
-      "Manually coded website focused on organic traffic. Integrated with WordPress for the managing of all interface content.",
-    ],
-    scale: "Major Project",
-    video: true,
-    preview: "/assets/video/retroverse.webm",
-    type: "uxui",
-    colors: [
-      { color: "000000", font: "FFFFFF" },
-      { color: "161616", font: "FFFFFF" },
-      { color: "232323", font: "FFFFFF" },
-      { color: "FFFFFF", font: "161616" },
-      { color: "AAAAAA", font: "161616" },
-    ],
-    technologies: ["Figma", "Photoshop", "Premiere Pro"],
-    page: [
-      {
-        title: "HeroSection",
-        description: "This is the Retroverse. Lorem Ipsum dolor sit amet.",
-        call: [
-          {
-            name: "View on GitHub",
-            link: "https://github.com/adrianholz/Retroverse",
-          },
-          {
-            name: "Download",
-            link: "https://github.com/adrianholz/Retroverse",
-          },
-        ],
-      },
-      {
-        title: "MetaSection",
-        objective: "Made for Client",
-        duration: "14 days (2 weeks)",
-        status: "Finished & Developed",
-      },
-      {
-        title: "DescriptionSection",
-        heading: "This is the Retroverse.",
-        theme: "light",
-        position: "left",
-        video: false,
-        animation: false,
-        preview: "/assets/img/png/retroverse-preview.png",
-        text: [
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.",
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.",
-        ],
-      },
-      {
-        title: "DescriptionSection",
-        heading: "This is the Retroverse.",
-        theme: "dark",
-        position: "right",
-        video: true,
-        animation: false,
-        preview: "/assets/video/retroverse.webm",
-        text: [
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.",
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.",
-        ],
-      },
-      {
-        title: "DescriptionSection",
-        heading: "This is the Retroverse.",
-        theme: "light",
-        position: "left",
-        video: true,
-        animation: false,
-        preview: "/assets/video/retroverse.webm",
-        text: [
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.",
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.",
-        ],
-      },
-      { title: "DesignSection" },
-    ],
-  },
-  {
-    title: {
-      name: "dog",
-      secondName: "resort",
-      style: {
-        fontFamily: "var(--font-livvic)",
-      },
-    },
-    description: [
-      "Manually coded website focused on organic traffic. Integrated with WordPress for the managing of all interface content.",
-      "Manually coded website focused on organic traffic. Integrated with WordPress for the managing of all interface content.",
-    ],
-    scale: "Major Project",
-    video: false,
-    preview: "/assets/img/webp/dogresort.webp",
-    type: "uxui",
-    colors: [
-      { color: "97CA49", font: "FFFFFF" },
-      { color: "FFA307", font: "FFFFFF" },
-      { color: "FFCCC3", font: "161616" },
-      { color: "47C8F3", font: "FFFFFF" },
-      { color: "1E37B8", font: "FFFFFF" },
-    ],
-    technologies: ["Figma", "Photoshop", "Illustrator"],
-    page: [
-      {
-        title: "HeroSection",
-        description: "This is the DogResort. Lorem Ipsum dolor sit amet.",
-        call: [
-          {
-            name: "View Live Demo",
-            link: "https://www.dogresort.com.br",
-          },
-        ],
-      },
-      {
-        title: "MetaSection",
-        objective: "Made for Client",
-        duration: "14 days (2 weeks)",
-        status: "Finished & Developed",
-      },
-      {
-        title: "DescriptionSection",
-        heading: "This is the Retroverse.",
-        theme: "light",
-        position: "right",
-        video: false,
-        animation: false,
-        preview: "/assets/img/png/retroverse-preview.png",
-        text: [
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.",
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.",
-        ],
-      },
-      { title: "DesignSection" },
-    ],
-  },
-  {
-    title: {
-      name: "Nike",
-      secondName: " Concept",
-      style: {
-        fontFamily: "var(--font-poppins)",
-        lineHeight: "2rem",
-      },
-    },
-    description: [
-      "Manually coded website focused on organic traffic. Integrated with WordPress for the managing of all interface content.",
-      "Manually coded website focused on organic traffic. Integrated with WordPress for the managing of all interface content.",
-    ],
-    scale: "Minor Project",
-    video: false,
-    preview: "/assets/img/webp/nike.webp",
-    type: "uxui",
-    colors: [
-      { color: "97CA49", font: "FFFFFF" },
-      { color: "FFA307", font: "FFFFFF" },
-      { color: "FFCCC3", font: "161616" },
-      { color: "47C8F3", font: "FFFFFF" },
-      { color: "1E37B8", font: "FFFFFF" },
-    ],
-    technologies: ["Figma", "Photoshop", "Illustrator"],
-    page: [
-      { title: "DesignSection" },
-      {
-        title: "HeroSection",
-        description: "This is the Nike Concept. Lorem Ipsum dolor sit amet.",
-        call: [
-          {
-            name: "View Live Demo",
-            link: "https://github.com/adrianholz/Retroverse",
-          },
-        ],
-      },
-      {
-        title: "MetaSection",
-        objective: "Made for Client",
-        duration: "14 days (2 weeks)",
-        status: "Finished & Developed",
-      },
-      {
-        title: "DescriptionSection",
-        heading: "This is the Retroverse.",
-        theme: "light",
-        position: "left",
-        video: false,
-        animation: true,
-        preview: "/assets/img/webp/nike.webp",
-        text: [
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.",
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.",
-        ],
-      },
-    ],
-  },
-];
 
 export const tools = [
   {

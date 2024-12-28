@@ -53,6 +53,12 @@ footer {
       align-items: center;
       margin: 0;
       padding: 0;
+      img {
+        transition: 0.2s ease;
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
     }
   }
   .footer-links {

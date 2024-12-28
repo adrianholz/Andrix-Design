@@ -4,6 +4,7 @@ import "./AboutSection.css";
 import Link from "next/link";
 import { useContext } from "react";
 import { ServiceContext } from "@/app/ServiceContext";
+import TransitionLink from "../../TransitionLink";
 
 export default function AboutSection() {
   const { blurRefs } = useContext(ServiceContext)!;
@@ -18,7 +19,7 @@ export default function AboutSection() {
         <div className="about-inner">
           <span>Adrian</span>
           <Image
-            src="/assets/img/png/no-picture.png"
+            src="/assets/img/webp/adrianholzschuhfull.webp"
             width={520}
             height={758}
             alt="Adrian Holzschuh"
@@ -38,7 +39,9 @@ export default function AboutSection() {
                 Graduate in <span>Systems Development</span>
               </h4>
             </div>
-            <Link href="/">Read more about me</Link>
+            <TransitionLink name="About me" href="/about">
+              Read more about me
+            </TransitionLink>
           </div>
         </div>
         <div

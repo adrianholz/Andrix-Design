@@ -6,6 +6,7 @@ import "atropos/css";
 import Atropos from "atropos/react";
 import { ContactContext } from "@/app/ContactContext";
 import { ServiceContext } from "@/app/ServiceContext";
+import TransitionLink from "../ui/TransitionLink";
 
 export default function Header({ type }: { type?: string }) {
   const { contact, setContact } = useContext(ContactContext)!;
@@ -56,14 +57,14 @@ export default function Header({ type }: { type?: string }) {
     <>
       <header>
         <div className="container">
-          <Link href="/">
+          <TransitionLink name="Home" href="/">
             <Image
               src="/assets/img/svg/Andrix.svg"
               width={100}
               height={78}
               alt="Andrix Logo"
             />
-          </Link>
+          </TransitionLink>
 
           <nav
             className={`
@@ -73,16 +74,24 @@ export default function Header({ type }: { type?: string }) {
           >
             <ul ref={navRef}>
               <li>
-                <Link href="/">Home</Link>
+                <TransitionLink name="Home" href="/">
+                  Home
+                </TransitionLink>
               </li>
               <li>
-                <Link href="/projects">Projects</Link>
+                <TransitionLink name="Projects" href="/projects">
+                  Projects
+                </TransitionLink>
               </li>
               <li>
-                <Link href="/about">About me</Link>
+                <TransitionLink name="About me" href="/about">
+                  About me
+                </TransitionLink>
               </li>
               <li>
-                <Link href="/">News</Link>
+                <TransitionLink name="News" href="/news">
+                  News
+                </TransitionLink>
               </li>
               <li>
                 <p onClick={() => setContact(true)}>Contact</p>

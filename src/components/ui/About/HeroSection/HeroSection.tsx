@@ -12,15 +12,35 @@ export default function HeroSection() {
           </h1>
           <h2>UX/UI & Digital Designer</h2>
           <div className="calls">
-            <a href="#education">Education</a>
-            <a href="#experience">Experience</a>
+            <a
+              href="#education"
+              onClick={(event) => {
+                event.preventDefault();
+                document.querySelector("#education")!.scrollIntoView({
+                  behavior: "smooth",
+                });
+              }}
+            >
+              Education
+            </a>
+            <a
+              href="#experience"
+              onClick={(event) => {
+                event.preventDefault();
+                document.querySelector("#experience")!.scrollIntoView({
+                  behavior: "smooth",
+                });
+              }}
+            >
+              Experience
+            </a>
           </div>
         </div>
         <Image
           width={513}
           height={748}
           alt="Adrian Holzschuh"
-          src="/assets/img/png/no-picture.png"
+          src="/assets/img/webp/adrianholzschuhfull.webp"
         />
       </div>
       <div className="blur uxui active"></div>

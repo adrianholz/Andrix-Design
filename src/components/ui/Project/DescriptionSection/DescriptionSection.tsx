@@ -6,6 +6,7 @@ type DescriptionSectionProps = {
   theme: string;
   position: string;
   video: boolean;
+  videoStyle: {};
   animation: boolean;
   preview: string;
   text: string[];
@@ -16,6 +17,7 @@ export default function DescriptionSection({
   theme,
   position,
   video,
+  videoStyle,
   animation,
   preview,
   text,
@@ -28,6 +30,7 @@ export default function DescriptionSection({
             <video
               className="preview"
               src={preview}
+              style={videoStyle ? videoStyle : {}}
               autoPlay
               muted
               loop

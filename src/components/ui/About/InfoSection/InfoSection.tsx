@@ -2,6 +2,21 @@ import Image from "next/image";
 import "./InfoSection.css";
 
 export default function InfoSection() {
+  const birthDate = new Date("2002-07-17");
+
+  const calculateAge = () => {
+    const today = new Date();
+    let age = today.getFullYear() - birthDate.getFullYear();
+    const isBirthdayPassed =
+      today.getMonth() > birthDate.getMonth() ||
+      (today.getMonth() === birthDate.getMonth() &&
+        today.getDate() >= birthDate.getDate());
+    if (!isBirthdayPassed) {
+      age--;
+    }
+    return age;
+  };
+
   return (
     <section className="about-me">
       <div className="container">
@@ -26,15 +41,17 @@ export default function InfoSection() {
             </div>
             <p>
               Hello! My name is <strong>Adrian Holzschuh</strong>, and I am the
-              developer and designer responsible for projects at{" "}
+              and designer responsible for projects here at{" "}
               <strong>Andrix Design</strong>. <br />
-              <br />I began my professional career in early 2020 when I became a
-              Hostnet franchisee in Botucatu, São Paulo. Through my business, I
-              served my first clients: local initiatives in need of digital
-              solutions. With the aim of elevating my own business and further
-              empowering myself, I founded Andrix Design, with the goal of
-              delivering optimized solutions in the market, all based on manual
-              coding, creation and development.
+              <br />
+              Being interested in technology from a very young age, I have
+              always been fascinated by the possibility of externalizing my
+              creativity through digital means. As of today, I have been working
+              with graphic and digital design for over 5 years, and am happy to
+              say that I've been able to help many clients achieve their goals
+              through my work. Through Andrix, I can now showcase the skills
+              I've acquired over the years and help you achieve the best digital
+              presence possible.
             </p>
           </div>
         </div>
@@ -42,10 +59,10 @@ export default function InfoSection() {
           <h1>Information</h1>
           <div className="information-inner">
             <div>
-              <span>Specialties</span>
+              <span>Specializations</span>
               <p>
-                Web Development <br />
-                and Interface Design
+                Graphic, Digital <br />
+                and UX/UI Design
               </p>
             </div>
             <div>
@@ -53,7 +70,7 @@ export default function InfoSection() {
                 <span>Born</span>
                 <p>July 17th</p>
                 <span>Age</span>
-                <p>22 years</p>
+                <p>{`${calculateAge()} years`}</p>
               </div>
               <div>
                 <span>From</span>
@@ -97,7 +114,7 @@ export default function InfoSection() {
                 <img src="/assets/img/svg/discord.svg" alt="Discord" />
               </a>
               <a
-                href="https://www.linkedin.com/in/adrian-holzschuh/"
+                href="https://www.linkedin.com/in/adrianholzschuh/"
                 target="_blank"
               >
                 <img src="/assets/img/svg/linkedin.svg" alt="Linkedin" />

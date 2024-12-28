@@ -8,7 +8,7 @@ export default function CertificatesSection() {
       <div>
         {certificates.map((certificate, index) => (
           <div className="certificates-card" key={index}>
-            <a href={`${certificate.pdf}.pdf`}>
+            <a href={`${certificate.pdf}.pdf`} target="_blank">
               <img
                 src={certificate.image}
                 alt={`${certificate.issuer} ${certificate.title} Certificate`}

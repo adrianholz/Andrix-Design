@@ -45,6 +45,10 @@ main#about {
         font-weight: 300;
       }
     }
+    img {
+      width: 100%;
+      object-fit: contain;
+    }
     .intro h2 {
       font-size: 1.5rem;
       text-transform: uppercase;
@@ -70,7 +74,10 @@ main#about {
         font-family: Poppins, sans-serif;
         font-weight: 500;
         transition-property: box-shadow, transform, opacity;
-        transition-duration: 0.2s, 0.5s, 0.5s;
+        transition-duration: 0.2s, 0.2s, 0.2s;
+        &:hover {
+          transform: scale(1.05);
+        }
         max-width: fit-content;
       }
     }
@@ -87,6 +94,7 @@ main#about {
 @media (max-width: 1060px) {
   main#about {
     .about-inner {
+      max-width: 800px;
       > span {
         font-size: 13rem;
       }
@@ -98,8 +106,9 @@ main#about {
         }
       }
       img {
-        max-width: 440px;
-        height: auto;
+        max-width: 320px;
+        justify-self: end;
+        height: 100%;
       }
     }
   }

@@ -12,6 +12,7 @@
       z-index: 2;
       display: block;
       padding: 24px;
+      box-sizing: content-box;
       background: #1b1b1b;
       border-radius: 10px;
       border: 1px solid #2a2a2a;

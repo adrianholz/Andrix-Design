@@ -1,7 +1,9 @@
-import { projects } from "@/data/home-data";
+import { projects } from "@/data/projects-data";
 import "./Projects.css";
 import Image from "next/image";
 import Link from "next/link";
+import TransitionLink from "../../TransitionLink";
+import Atropos from "atropos/react";
 
 type Tags = {
   search: string;
@@ -39,78 +41,95 @@ export default function Projects({ tags }: { tags: Tags }) {
   return (
     <section className="projects-container">
       <h1>Projects</h1>
-      <div>
-        {filteredProjects.map((project, index) => {
-          const slug = project.title.secondName
-            ? `${project.title.name.toLowerCase()}-${project.title.secondName
-                .replaceAll(" ", "")
-                .toLowerCase()}`
-            : project.title.name.toLowerCase();
+      {filteredProjects.length > 0 ? (
+        <div>
+          {filteredProjects.map((project, index) => {
+            const slug = project.title.secondName
+              ? `${project.title.name.toLowerCase()}-${project.title.secondName
+                  .replaceAll(" ", "")
+                  .toLowerCase()}`
+              : project.title.name.toLowerCase();
 
-          return (
-            <Link href={`/projects/${slug}`} key={index}>
-              <div className="project-entry">
-                <div className="project-entry-inner">
-                  {project.video ? (
-                    <video
-                      src={project.preview}
-                      autoPlay
-                      muted
-                      loop
-                      className="project-cover"
-                      disablePictureInPicture
-                    ></video>
-                  ) : (
-                    <Image
-                      src={project.preview}
-                      alt={project.title.name}
-                      width={16}
-                      height={9}
-                      layout="responsive"
-                      className="project-cover"
-                    />
-                  )}
-                  <h3
-                    style={
-                      project.title.styleDark
-                        ? project.title.styleDark
-                        : project.title.style
-                    }
-                  >
-                    {project.title.name}
-                    {project.title.secondName ? (
-                      <span>{project.title.secondName}</span>
-                    ) : null}
-                  </h3>
-                  <ul>
-                    {project.technologies.map((tool, index) => (
-                      <li key={index}>
-                        <img
-                          src={`/assets/img/svg/tech-${tool
-                            .toLowerCase()
-                            .replaceAll(" ", "-")}.svg`}
-                          alt={tool}
+            return (
+              <Atropos
+                key={index}
+                shadowScale={1.05}
+                rotateYMax={10}
+                rotateXMax={10}
+                className="project-atropos"
+              >
+                <Link href={`/projects/${slug}`}>
+                  <div className="project-entry">
+                    <div className="project-entry-inner">
+                      {project.video ? (
+                        <video
+                          src={project.preview}
+                          autoPlay
+                          muted
+                          loop
+                          className="project-cover"
+                          disablePictureInPicture
+                          style={project.videoStyle ? project.videoStyle : {}}
+                        ></video>
+                      ) : (
+                        <Image
+                          src={project.preview}
+                          alt={project.title.name}
+                          width={16}
+                          height={9}
+                          layout="responsive"
+                          className="project-cover"
+                          sizes="(max-width: 330px) 100vw, 330px"
+                          style={
+                            project.type !== "uxui"
+                              ? { objectPosition: "center", transition: "none" }
+                              : {}
+                          }
                         />
-                      </li>
-                    ))}
-                  </ul>
-                  <p>{project.description[0]}</p>
-                </div>
-                <img
-                  src={`/assets/img/svg/${project.type}.svg`}
-                  alt={`${project.type} Icon`}
-                  className="project-type"
-                />
-                <div className={`blur active ${project.type}`}></div>
-              </div>
-            </Link>
-          );
-        })}
-
-        {filteredProjects.length === 0 ? (
+                      )}
+                      <h3
+                        style={
+                          project.title.styleDark
+                            ? project.title.styleDark
+                            : project.title.style
+                        }
+                      >
+                        {project.title.name}
+                        {project.title.secondName ? (
+                          <span>{project.title.secondName}</span>
+                        ) : null}
+                      </h3>
+                      <ul>
+                        {project.technologies.map((tool, index) => (
+                          <li key={index}>
+                            <img
+                              src={`/assets/img/svg/tech-${tool
+                                .toLowerCase()
+                                .replaceAll(" ", "-")}.svg`}
+                              alt={tool}
+                            />
+                          </li>
+                        ))}
+                      </ul>
+                      <p>{project.description[0]}</p>
+                    </div>
+                    <img
+                      src={`/assets/img/svg/${project.type}.svg`}
+                      alt={`${project.type} Icon`}
+                      className="project-type"
+                    />
+                    <div className={`blur active ${project.type}`}></div>
+                  </div>
+                </Link>
+              </Atropos>
+            );
+          })}
+        </div>
+      ) : (
+        <div className="projects-not-found">
           <p>Sorry, no projects matched the criteria.</p>
-        ) : null}
-      </div>
+        </div>
+      )}
     </section>
   );
 }

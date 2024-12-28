@@ -54,7 +54,7 @@ export default function Services({
               muted
               autoPlay
               loop
-              src={`assets/video/${service.file}.mp4`}
+              src={`assets/video/${service.file}.webm`}
             ></video>
             <div>
               <span>Design Process</span>

@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useContext } from "react";
 import { ServiceContext } from "@/app/ServiceContext";
 import { ContactContext } from "@/app/ContactContext";
+import TransitionLink from "../ui/TransitionLink";
 
 export default function Footer({ type }: { type?: string }) {
   const { blurRefs } = useContext(ServiceContext)!;
@@ -23,8 +24,10 @@ export default function Footer({ type }: { type?: string }) {
           </Link>
           <div className="footer-contact">
             <h2>Contact</h2>
-            <a href="tel:+17789554167">+1 (778) 955-4167</a>
-            <a href="mailto:contato@andrix.design">contato@andrix.design</a>
+            <a href="tel:+16046792058">+1 (604) 679-2058</a>
+            <a href="mailto:adrian.holzschuh@gmail.com">
+              adrian.holzschuh@gmail.com
+            </a>
             <span></span>
             <address>
               Vancouver, BC <br />
@@ -71,16 +74,24 @@ export default function Footer({ type }: { type?: string }) {
             <h2>Andrix</h2>
             <ul>
               <li>
-                <Link href="/">Homepage</Link>
+                <TransitionLink name="Home" href="/">
+                  Homepage
+                </TransitionLink>
               </li>
               <li>
-                <Link href="/">Projects</Link>
+                <TransitionLink name="Projects" href="/projects">
+                  Projects
+                </TransitionLink>
               </li>
               <li>
-                <Link href="/">About me</Link>
+                <TransitionLink name="About me" href="/about">
+                  About me
+                </TransitionLink>
               </li>
               <li>
-                <Link href="/">News</Link>
+                <TransitionLink name="News" href="/news">
+                  News
+                </TransitionLink>
               </li>
               <li>
                 <p onClick={() => setContact(true)}>Contact</p>

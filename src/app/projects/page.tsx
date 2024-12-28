@@ -7,7 +7,7 @@ import { ServiceContextProvider } from "../ServiceContext";
 import Marquee from "@/components/ui/Marquee";
 import ProjectsPage from "@/components/pages/ProjectsPage";
 
-export default function About() {
+export default function Projects() {
   return (
     <>
       <ContactContextProvider>

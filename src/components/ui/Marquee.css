@@ -8,6 +8,7 @@
   font-weight: 800;
   color: var(--b1);
   background: var(--b2);
+  gap: var(--gap);
   .marquee-content {
     flex-shrink: 0;
     display: flex;

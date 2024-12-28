@@ -6,6 +6,7 @@ import Post from "../Post/Post";
 import { useContext } from "react";
 import "./HeroSection.css";
 import { ServiceContext } from "@/app/ServiceContext";
+import { news } from "@/data/news-data";
 
 export default function HeroSection() {
   const { titleRefs, imageRefs, service, handleTitleChange, blurRefs } =
@@ -18,7 +19,7 @@ export default function HeroSection() {
         <h1>
           <span>
             <i
-              className="opaque"
+              className="active opaque"
               ref={(el) => {
                 if (el) {
                   titleRefs.current[0] = el;
@@ -29,7 +30,7 @@ export default function HeroSection() {
             </i>
           </span>
           <span
-            className="separator opaque"
+            className="separator active opaque"
             ref={(el) => {
               if (el) {
                 titleRefs.current[1] = el;
@@ -37,7 +38,7 @@ export default function HeroSection() {
             }}
           ></span>
           <span
-            className="opaque"
+            className="active opaque"
             ref={(el) => {
               if (el) {
                 titleRefs.current[2] = el;
@@ -97,17 +98,21 @@ export default function HeroSection() {
         centeredSlides
         grabCursor={true}
       >
-        <SwiperSlide>
-          <Post
-            title="New Website"
-            image="/assets/img/webp/logo.webp"
-            alt="Andrix Logo"
-            preview="Testing, testing… Hey, how are you? Welcome to Andrix Design’s new website! This project, which took over two months to complete (phew), was conceived as a solution to centralize all the projects I’ve created so far in my journey as a developer..."
-            author="Adrian H."
-            time="1.5min"
-            link="/"
-          />
-        </SwiperSlide>
+        {news.map((post, index) => (
+          <SwiperSlide key={index}>
+            <Post
+              title={post.title}
+              image={post.banner}
+              alt={post.title}
+              preview={post.sections[0]
+                .content!.split(" ")
+                .slice(0, 42)
+                .join(" ")}
+              author={post.author}
+              time={post.time}
+            />
+          </SwiperSlide>
+        ))}
       </Swiper>
     </main>
   );

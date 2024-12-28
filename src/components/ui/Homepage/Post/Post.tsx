@@ -1,7 +1,7 @@
 import Image from "next/image";
 import "./Post.css";
 import Link from "next/link";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 
 type PostProps = {
   title: string;
@@ -10,7 +10,6 @@ type PostProps = {
   preview: string;
   author: string;
   time: string;
-  link: string;
 };
 
 export default function Post({
@@ -20,7 +19,6 @@ export default function Post({
   preview,
   author,
   time,
-  link,
 }: PostProps) {
   const [mobile, setMobile] = useState(false);
 
@@ -46,7 +44,9 @@ export default function Post({
           <p>{time}</p>
         </div>
       </div>
-      <Link href={link}>Read post</Link>
+      <Link href={`/news/${title.toLowerCase().replaceAll(" ", "-")}`}>
+        Read post
+      </Link>
     </div>
   );
 

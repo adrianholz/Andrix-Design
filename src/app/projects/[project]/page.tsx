@@ -10,7 +10,7 @@ import DesignSection from "@/components/ui/Project/DesignSection/DesignSection";
 import HeroSection from "@/components/ui/Project/HeroSection/HeroSection";
 import MetaSection from "@/components/ui/Project/MetaSection/MetaSection";
 import Tooltip from "@/components/ui/Tooltip";
-import { projects } from "@/data/home-data";
+import { projects } from "@/data/projects-data";
 import { CSSProperties, use } from "react";
 
 type ProjectParams = {
@@ -55,7 +55,7 @@ export default function Project({
               <HeroSection
                 key={index}
                 title={projectData.title.name}
-                secondTitle={projectData.title.secondName}
+                secondTitle={projectData.title.secondName!}
                 style={projectData.title.styleDark as CSSProperties}
                 video={projectData.video}
                 preview={projectData.preview}
@@ -68,9 +68,9 @@ export default function Project({
             return (
               <MetaSection
                 scale={projectData.scale}
-                objective={component.objective}
-                duration={component.duration}
-                status={component.status}
+                objective={component.objective!}
+                duration={component.duration!}
+                status={component.status!}
                 key={index}
               />
             );
@@ -80,12 +80,13 @@ export default function Project({
               <DescriptionSection
                 key={index}
                 heading={component.heading}
-                theme={component.theme}
-                position={component.position}
-                video={component.video}
-                animation={component.animation}
-                preview={component.preview}
-                text={component.text}
+                theme={component.theme!}
+                position={component.position!}
+                video={component.video!}
+                videoStyle={component.videoStyle!}
+                animation={component.animation!}
+                preview={component.preview!}
+                text={component.text!}
               />
             );
           }

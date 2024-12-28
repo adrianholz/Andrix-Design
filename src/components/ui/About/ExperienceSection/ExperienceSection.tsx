@@ -3,7 +3,7 @@ import { experiences } from "@/data/about-data";
 
 export default function ExperienceSection() {
   return (
-    <section className="experience">
+    <section className="experience" id="experience">
       <h1>Experience</h1>
       <div>
         <div className="experience-container">

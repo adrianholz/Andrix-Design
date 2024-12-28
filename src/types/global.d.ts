@@ -1,6 +1,7 @@
 declare global {
   type Service = {
     name: string;
+    short: string;
     file: string;
     description: string;
     process: string;

@@ -3,6 +3,7 @@
   overflow: hidden;
   background: var(--b1);
   height: 700px;
+  text-align: center;
   animation: top-to-bottom ease-in-out 10s infinite alternate;
   > div {
     background: radial-gradient(
@@ -67,6 +68,11 @@
       font-weight: 500;
       max-width: -moz-fit-content;
       max-width: fit-content;
+      transition-property: box-shadow, transform, opacity;
+      transition-duration: 0.2s, 0.2s, 0.2s;
+      &:hover {
+        transform: scale(1.05);
+      }
     }
   }
 }

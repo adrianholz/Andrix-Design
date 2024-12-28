@@ -8,6 +8,7 @@ import {
   robotoMono,
   vudotronic,
 } from "./fonts";
+import Transition from "@/components/ui/Transition";
 
 export const metadata: Metadata = {
   title: "Andrix Design",
@@ -24,7 +25,10 @@ export default function RootLayout({
       lang="en"
       className={`${poppins.variable} ${raleway.variable} ${lora.variable} ${livvic.variable} ${robotoMono.variable} ${vudotronic.variable}`}
     >
-      <body>{children}</body>
+      <body>
+        <Transition />
+        {children}
+      </body>
     </html>
   );
 }
