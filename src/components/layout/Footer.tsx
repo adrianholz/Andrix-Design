@@ -2,8 +2,8 @@ import Image from "next/image";
 import "./Footer.css";
 import Link from "next/link";
 import { useContext } from "react";
-import { ServiceContext } from "@/app/ServiceContext";
-import { ContactContext } from "@/app/ContactContext";
+import { ServiceContext } from "../../app/ServiceContext";
+import { ContactContext } from "../../app/ContactContext";
 import TransitionLink from "../ui/TransitionLink";
 
 export default function Footer({ type }: { type?: string }) {

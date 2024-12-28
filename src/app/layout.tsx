@@ -7,7 +7,7 @@ import {
   robotoMono,
   vudotronic,
 } from "./fonts";
-import Transition from "@/components/ui/Transition";
+import Transition from "../components/ui/Transition";
 
 export default function RootLayout({
   children,

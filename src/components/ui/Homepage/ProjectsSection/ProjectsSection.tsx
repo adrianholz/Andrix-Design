@@ -6,7 +6,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper/modules";
 import "swiper/css/pagination";
 import "swiper/css";
-import { projects } from "@/data/projects-data";
+import { projects } from "../../../../data/projects-data";
 
 export default function ProjectsSection() {
   const projectRefs = useRef<HTMLDivElement[]>([]);

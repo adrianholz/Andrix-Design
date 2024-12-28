@@ -1,6 +1,6 @@
 "use client";
 
-import { news } from "@/data/news-data";
+import { news } from "../../data/news-data";
 import PostPreview from "../ui/News/PostPreview/PostPreview";
 import "../ui/News/NewsPage.css";
 

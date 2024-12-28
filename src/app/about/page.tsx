@@ -1,11 +1,11 @@
 "use client";
 
-import Footer from "@/components/layout/Footer";
-import Header from "@/components/layout/Header";
-import AboutPage from "@/components/pages/AboutPage";
+import Footer from "../../components/layout/Footer";
+import Header from "../../components/layout/Header";
+import AboutPage from "../../components/pages/AboutPage";
 import { ContactContextProvider } from "../ContactContext";
 import { ServiceContextProvider } from "../ServiceContext";
-import Marquee from "@/components/ui/Marquee";
+import Marquee from "../../components/ui/Marquee";
 import SEO from "../SEO";
 
 export default function About() {

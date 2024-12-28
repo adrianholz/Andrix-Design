@@ -6,7 +6,7 @@ import {
   useRef,
   useState,
 } from "react";
-import { services } from "@/data/home-data";
+import { services } from "../data/home-data";
 
 type ServiceContextTypes = {
   service: Service;

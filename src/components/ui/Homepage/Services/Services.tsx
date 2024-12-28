@@ -1,6 +1,6 @@
 "use client";
 
-import { ServiceContext } from "@/app/ServiceContext";
+import { ServiceContext } from "../../../../app/ServiceContext";
 import Image from "next/image";
 import { MutableRefObject, RefObject, useContext } from "react";
 

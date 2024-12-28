@@ -1,11 +1,11 @@
-import { ServiceContext } from "@/app/ServiceContext";
+import { ServiceContext } from "../../../../app/ServiceContext";
 import Heading from "../Heading/Heading";
 import Interfaces from "../Interfaces/Interfaces";
 import Services from "../Services/Services";
 import Title from "../Title/Title";
 import "./ServicesSection.css";
 import { useContext } from "react";
-import { services } from "@/data/home-data";
+import { services } from "../../../../data/home-data";
 
 export default function ServicesSection() {
   const { videoRef, service, activeIndex, handleTitleChange, imageRefs } =

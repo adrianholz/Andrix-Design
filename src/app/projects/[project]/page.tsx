@@ -1,17 +1,17 @@
 "use client";
 
-import { ContactContextProvider } from "@/app/ContactContext";
-import SEO from "@/app/SEO";
-import { ServiceContextProvider } from "@/app/ServiceContext";
-import Footer from "@/components/layout/Footer";
-import Header from "@/components/layout/Header";
-import Marquee from "@/components/ui/Marquee";
-import DescriptionSection from "@/components/ui/Project/DescriptionSection/DescriptionSection";
-import DesignSection from "@/components/ui/Project/DesignSection/DesignSection";
-import HeroSection from "@/components/ui/Project/HeroSection/HeroSection";
-import MetaSection from "@/components/ui/Project/MetaSection/MetaSection";
-import Tooltip from "@/components/ui/Tooltip";
-import { projects } from "@/data/projects-data";
+import { ContactContextProvider } from "../../../app/ContactContext";
+import SEO from "../../../app/SEO";
+import { ServiceContextProvider } from "../../../app/ServiceContext";
+import Footer from "../../../components/layout/Footer";
+import Header from "../../../components/layout/Header";
+import Marquee from "../../../components/ui/Marquee";
+import DescriptionSection from "../../../components/ui/Project/DescriptionSection/DescriptionSection";
+import DesignSection from "../../../components/ui/Project/DesignSection/DesignSection";
+import HeroSection from "../../../components/ui/Project/HeroSection/HeroSection";
+import MetaSection from "../../../components/ui/Project/MetaSection/MetaSection";
+import Tooltip from "../../../components/ui/Tooltip";
+import { projects } from "../../../data/projects-data";
 import { CSSProperties, use } from "react";
 
 type ProjectParams = {

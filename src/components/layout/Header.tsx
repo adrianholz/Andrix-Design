@@ -4,8 +4,8 @@ import Image from "next/image";
 import Link from "next/link";
 import "atropos/css";
 import Atropos from "atropos/react";
-import { ContactContext } from "@/app/ContactContext";
-import { ServiceContext } from "@/app/ServiceContext";
+import { ContactContext } from "../../app/ContactContext";
+import { ServiceContext } from "../../app/ServiceContext";
 import TransitionLink from "../ui/TransitionLink";
 
 export default function Header({ type }: { type?: string }) {

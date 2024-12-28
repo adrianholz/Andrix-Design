@@ -1,4 +1,4 @@
-import { certificates } from "@/data/about-data";
+import { certificates } from "../../../../data/about-data";
 import "./CertificatesSection.css";
 
 export default function CertificatesSection() {

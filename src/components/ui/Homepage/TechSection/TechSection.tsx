@@ -2,7 +2,7 @@ import Link from "next/link";
 import Heading from "../Heading/Heading";
 import "./TechSection.css";
 import { CSSProperties } from "react";
-import { tools } from "@/data/home-data";
+import { tools } from "../../../../data/home-data";
 
 export default function TechSection() {
   return (

@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import "./Interfaces.css";
-import { boxes } from "@/data/home-data";
+import { boxes } from "../../../../data/home-data";
 
 export default function Interfaces() {
   const [box, setBox] = useState(boxes[0]);

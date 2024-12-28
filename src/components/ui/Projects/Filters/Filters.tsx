@@ -1,4 +1,4 @@
-import { services, tools } from "@/data/home-data";
+import { services, tools } from "../../../../data/home-data";
 import "./Filters.css";
 import Filter from "../Filter/Filter";
 

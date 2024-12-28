@@ -1,12 +1,12 @@
 import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { services } from "@/data/home-data";
+import { services } from "../../../../data/home-data";
 import "swiper/css";
 import Post from "../Post/Post";
 import { useContext } from "react";
 import "./HeroSection.css";
-import { ServiceContext } from "@/app/ServiceContext";
-import { news } from "@/data/news-data";
+import { ServiceContext } from "../../../../app/ServiceContext";
+import { news } from "../../../../data/news-data";
 
 export default function HeroSection() {
   const { titleRefs, imageRefs, service, handleTitleChange, blurRefs } =

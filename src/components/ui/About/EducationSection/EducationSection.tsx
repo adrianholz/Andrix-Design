@@ -1,4 +1,4 @@
-import { educations } from "@/data/about-data";
+import { educations } from "../../../../data/about-data";
 import "./EducationSection.css";
 
 export default function EducationSection() {

@@ -1,15 +1,15 @@
 "use client";
 
-import "@/components/ui/News/Post.css";
-import { ContactContextProvider } from "@/app/ContactContext";
-import { ServiceContextProvider } from "@/app/ServiceContext";
-import Footer from "@/components/layout/Footer";
-import Header from "@/components/layout/Header";
-import Marquee from "@/components/ui/Marquee";
-import { news } from "@/data/news-data";
+import "../../components/ui/News/Post.css";
+import { ContactContextProvider } from "../../../app/ContactContext";
+import { ServiceContextProvider } from "../../../app/ServiceContext";
+import Footer from "../../../components/layout/Footer";
+import Header from "../../../components/layout/Header";
+import Marquee from "../../../components/ui/Marquee";
+import { news } from "../../../data/news-data";
 import Image from "next/image";
 import { use } from "react";
-import SEO from "@/app/SEO";
+import SEO from "../../../app/SEO";
 
 type PostParams = {
   post: string;

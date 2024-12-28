@@ -1,9 +1,9 @@
 "use client";
 
-import Footer from "@/components/layout/Footer";
-import Header from "@/components/layout/Header";
-import Marquee from "@/components/ui/Marquee";
-import HomePage from "@/components/pages/HomePage";
+import Footer from "../components/layout/Footer";
+import Header from "../components/layout/Header";
+import Marquee from "../components/ui/Marquee";
+import HomePage from "../components/pages/HomePage";
 import { ServiceContextProvider } from "./ServiceContext";
 import { ContactContextProvider } from "./ContactContext";
 import SEO from "./SEO";

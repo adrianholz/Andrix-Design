@@ -1,5 +1,5 @@
 import "./ExperienceSection.css";
-import { experiences } from "@/data/about-data";
+import { experiences } from "../../../../data/about-data";
 
 export default function ExperienceSection() {
   return (

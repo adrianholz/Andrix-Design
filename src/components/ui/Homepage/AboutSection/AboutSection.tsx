@@ -2,7 +2,7 @@ import Image from "next/image";
 import Heading from "../Heading/Heading";
 import "./AboutSection.css";
 import { useContext } from "react";
-import { ServiceContext } from "@/app/ServiceContext";
+import { ServiceContext } from "../../../../app/ServiceContext";
 import TransitionLink from "../../TransitionLink";
 
 export default function AboutSection() {
