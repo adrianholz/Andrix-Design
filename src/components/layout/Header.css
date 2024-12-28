@@ -117,7 +117,7 @@ header {
   align-items: center;
   transition: opacity 0.3s ease;
   .card-inner {
-    background: url("/assets/img/png/card-bg.png");
+    background: url("/assets/img/webp/card-bg.webp");
     position: relative;
     overflow: hidden;
     padding: 20px;

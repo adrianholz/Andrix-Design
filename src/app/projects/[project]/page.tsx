@@ -1,6 +1,7 @@
 "use client";
 
 import { ContactContextProvider } from "@/app/ContactContext";
+import SEO from "@/app/SEO";
 import { ServiceContextProvider } from "@/app/ServiceContext";
 import Footer from "@/components/layout/Footer";
 import Header from "@/components/layout/Header";
@@ -35,82 +36,96 @@ export default function Project({
 
   const projectData = projectMatch[0];
 
+  const slug = projectData.title.secondName
+    ? `${projectData.title.name.toLowerCase()}-${projectData.title.secondName
+        .replaceAll(" ", "")
+        .toLowerCase()}`
+    : projectData.title.name.toLowerCase();
+
   return (
-    <ContactContextProvider>
-      <ServiceContextProvider>
-        <Marquee
-          gap="10px"
-          page={`${projectData.title.name}${
-            projectData.title.secondName ? projectData.title.secondName : ""
-          }`}
-          title="Andrix Design"
-          time="30s"
-          reverse={false}
-        />
-        <Header type={projectData.type} />
-        <Tooltip />
-        {projectData.page?.map((component, index) => {
-          if (component.title === "HeroSection") {
-            return (
-              <HeroSection
-                key={index}
-                title={projectData.title.name}
-                secondTitle={projectData.title.secondName!}
-                style={projectData.title.styleDark as CSSProperties}
-                video={projectData.video}
-                preview={projectData.preview}
-                description={component.description}
-                call={component.call}
-              />
-            );
-          }
-          if (component.title === "MetaSection") {
-            return (
-              <MetaSection
-                scale={projectData.scale}
-                objective={component.objective!}
-                duration={component.duration!}
-                status={component.status!}
-                key={index}
-              />
-            );
-          }
-          if (component.title === "DescriptionSection") {
-            return (
-              <DescriptionSection
-                key={index}
-                heading={component.heading}
-                theme={component.theme!}
-                position={component.position!}
-                video={component.video!}
-                videoStyle={component.videoStyle!}
-                animation={component.animation!}
-                preview={component.preview!}
-                text={component.text!}
-              />
-            );
-          }
-          if (component.title === "DesignSection") {
-            return (
-              <DesignSection
-                key={index}
-                colors={projectData.colors}
-                technologies={projectData.technologies}
-              />
-            );
-          }
-        })}
-        <Footer type={projectData.type} />
-        <Marquee
-          gap="10px"
-          page={`${projectData.title.name}${
-            projectData.title.secondName ? projectData.title.secondName : ""
-          }`}
-          title="Andrix Design"
-          time="30s"
-          reverse={true}
-        />
-      </ServiceContextProvider>
-    </ContactContextProvider>
+    <SEO
+      title={`${projectData.title.name}${
+        projectData.title.secondName ? projectData.title.secondName : ""
+      } | Andrix Design`}
+      description={projectData.description[0]}
+      url={`https://www.andrix.design/projects/${slug}`}
+    >
+      <ContactContextProvider>
+        <ServiceContextProvider>
+          <Marquee
+            gap="10px"
+            page={`${projectData.title.name}${
+              projectData.title.secondName ? projectData.title.secondName : ""
+            }`}
+            title="Andrix Design"
+            time="30s"
+            reverse={false}
+          />
+          <Header type={projectData.type} />
+          <Tooltip />
+          {projectData.page?.map((component, index) => {
+            if (component.title === "HeroSection") {
+              return (
+                <HeroSection
+                  key={index}
+                  title={projectData.title.name}
+                  secondTitle={projectData.title.secondName!}
+                  style={projectData.title.styleDark as CSSProperties}
+                  video={projectData.video}
+                  preview={projectData.preview}
+                  description={component.description}
+                  call={component.call}
+                />
+              );
+            }
+            if (component.title === "MetaSection") {
+              return (
+                <MetaSection
+                  scale={projectData.scale}
+                  objective={component.objective!}
+                  duration={component.duration!}
+                  status={component.status!}
+                  key={index}
+                />
+              );
+            }
+            if (component.title === "DescriptionSection") {
+              return (
+                <DescriptionSection
+                  key={index}
+                  heading={component.heading}
+                  theme={component.theme!}
+                  position={component.position!}
+                  video={component.video!}
+                  videoStyle={component.videoStyle!}
+                  animation={component.animation!}
+                  preview={component.preview!}
+                  text={component.text!}
+                />
+              );
+            }
+            if (component.title === "DesignSection") {
+              return (
+                <DesignSection
+                  key={index}
+                  colors={projectData.colors}
+                  technologies={projectData.technologies}
+                />
+              );
+            }
+          })}
+          <Footer type={projectData.type} />
+          <Marquee
+            gap="10px"
+            page={`${projectData.title.name}${
+              projectData.title.secondName ? projectData.title.secondName : ""
+            }`}
+            title="Andrix Design"
+            time="30s"
+            reverse={true}
+          />
+        </ServiceContextProvider>
+      </ContactContextProvider>
+    </SEO>
   );
 }

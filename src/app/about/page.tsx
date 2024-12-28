@@ -6,10 +6,15 @@ import AboutPage from "@/components/pages/AboutPage";
 import { ContactContextProvider } from "../ContactContext";
 import { ServiceContextProvider } from "../ServiceContext";
 import Marquee from "@/components/ui/Marquee";
+import SEO from "../SEO";
 
 export default function About() {
   return (
-    <>
+    <SEO
+      title="Adrian Holzschuh | Andrix Design"
+      description="Hello! My name is Adrian Holzschuh, and I am the and designer responsible for projects here at Andrix Design. Here are the digital design and UX/UI projects I've worked on."
+      url="https://www.andrix.design/about"
+    >
       <ContactContextProvider>
         <ServiceContextProvider>
           <Marquee
@@ -31,6 +36,6 @@ export default function About() {
           />
         </ServiceContextProvider>
       </ContactContextProvider>
-    </>
+    </SEO>
   );
 }

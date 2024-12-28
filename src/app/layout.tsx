@@ -1,4 +1,3 @@
-import type { Metadata } from "next";
 import "./globals.css";
 import {
   poppins,
@@ -9,11 +8,6 @@ import {
   vudotronic,
 } from "./fonts";
 import Transition from "@/components/ui/Transition";
-
-export const metadata: Metadata = {
-  title: "Andrix Design",
-  description: "Created by Andrix",
-};
 
 export default function RootLayout({
   children,

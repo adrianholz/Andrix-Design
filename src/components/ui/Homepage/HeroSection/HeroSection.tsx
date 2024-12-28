@@ -50,7 +50,7 @@ export default function HeroSection() {
         </h1>
         <div className="orbit">
           <Image
-            src="/assets/img/png/orbit.png"
+            src="/assets/img/webp/orbit.webp"
             height={650}
             width={650}
             alt="Orbit Decorator"
