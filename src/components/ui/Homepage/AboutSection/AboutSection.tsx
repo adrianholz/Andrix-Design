@@ -1,7 +1,6 @@
 import Image from "next/image";
 import Heading from "../Heading/Heading";
 import "./AboutSection.css";
-import Link from "next/link";
 import { useContext } from "react";
 import { ServiceContext } from "@/app/ServiceContext";
 import TransitionLink from "../../TransitionLink";

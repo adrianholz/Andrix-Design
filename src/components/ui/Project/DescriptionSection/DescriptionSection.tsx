@@ -6,7 +6,7 @@ type DescriptionSectionProps = {
   theme: string;
   position: string;
   video: boolean;
-  videoStyle: {};
+  videoStyle?: {};
   animation: boolean;
   preview: string;
   text: string[];

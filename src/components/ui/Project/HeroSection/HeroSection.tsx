@@ -37,7 +37,7 @@ export default function HeroSection({
           {secondTitle ? <span>{secondTitle}</span> : null}
         </h1>
         <p>{description}</p>
-        {call ? (
+        {call && call.length > 0 && (
           <div className="project-calls">
             {call.map((action, index) => (
               <a href={action.link} key={index} target="_blank">
@@ -45,7 +45,7 @@ export default function HeroSection({
               </a>
             ))}
           </div>
-        ) : null}
+        )}
       </div>
       {video ? (
         <video

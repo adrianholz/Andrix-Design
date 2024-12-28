@@ -74,7 +74,7 @@ export default function Project({
                   video={projectData.video}
                   preview={projectData.preview}
                   description={component.description}
-                  call={component.call}
+                  {...("call" in component && { call: component.call })}
                 />
               );
             }
@@ -97,7 +97,9 @@ export default function Project({
                   theme={component.theme!}
                   position={component.position!}
                   video={component.video!}
-                  videoStyle={component.videoStyle!}
+                  {...("videoStyle" in component && {
+                    videoStyle: component.videoStyle,
+                  })}
                   animation={component.animation!}
                   preview={component.preview!}
                   text={component.text!}

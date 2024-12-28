@@ -6,7 +6,6 @@ import Marquee from "@/components/ui/Marquee";
 import HomePage from "@/components/pages/HomePage";
 import { ServiceContextProvider } from "./ServiceContext";
 import { ContactContextProvider } from "./ContactContext";
-import { HelmetProvider } from "react-helmet-async";
 import SEO from "./SEO";
 
 export default function Home() {

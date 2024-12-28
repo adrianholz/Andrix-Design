@@ -75,8 +75,10 @@ export default function Post({ params }: { params: Promise<PostParams> }) {
                         width={16}
                         height={9}
                         layout="responsive"
-                        alt={section.alt!}
-                        src={section.image!}
+                        alt={"alt" in section ? (section.alt! as string) : ""}
+                        src={
+                          "image" in section ? (section.image! as string) : ""
+                        }
                         key={index}
                         className="post-media"
                       />
@@ -84,7 +86,9 @@ export default function Post({ params }: { params: Promise<PostParams> }) {
                   case "VideoSection":
                     return (
                       <video
-                        src={section.video}
+                        src={
+                          "video" in section ? (section.video! as string) : ""
+                        }
                         autoPlay
                         muted
                         loop
