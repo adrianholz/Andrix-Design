@@ -1,6 +1,6 @@
 "use client";
 
-import "../../components/ui/News/Post.css";
+import "../../../components/ui/News/Post.css";
 import { ContactContextProvider } from "../../../app/ContactContext";
 import { ServiceContextProvider } from "../../../app/ServiceContext";
 import Footer from "../../../components/layout/Footer";
