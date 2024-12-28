@@ -8,6 +8,7 @@ import {
   vudotronic,
 } from "./fonts";
 import Transition from "../components/ui/Transition";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 export default function RootLayout({
   children,
@@ -22,6 +23,7 @@ export default function RootLayout({
       <body>
         <Transition />
         {children}
+        <SpeedInsights />
       </body>
     </html>
   );
