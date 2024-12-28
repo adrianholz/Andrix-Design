@@ -9,6 +9,7 @@ import {
 } from "./fonts";
 import Transition from "../components/ui/Transition";
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import { Analytics } from "@vercel/analytics/react";
 
 export default function RootLayout({
   children,
@@ -24,6 +25,7 @@ export default function RootLayout({
         <Transition />
         {children}
         <SpeedInsights />
+        <Analytics />
       </body>
     </html>
   );
