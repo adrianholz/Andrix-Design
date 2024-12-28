@@ -8,7 +8,7 @@ import ProjectsSection from "../ui/Homepage/ProjectsSection/ProjectsSection";
 import Tooltip from "../ui/Tooltip";
 import TechSection from "../ui/Homepage/TechSection/TechSection";
 
-export default function Homepage() {
+export default function HomePage() {
   return (
     <>
       <Tooltip />
