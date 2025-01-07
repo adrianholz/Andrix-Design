@@ -156,6 +156,121 @@ export const projects = [
   },
   {
     title: {
+      name: "Andrix",
+      secondName: " Design",
+    },
+    description: [
+      "Andrix Design is the project I made to showcase all my design work throughout the years, being recently redesigned.",
+      "It is a direct upgrade of its previous 2023 version, in order to catalog projects efficiently and optimize the user experience/navigation even further.",
+    ],
+    scale: "Major Project",
+    video: false,
+    preview: "/assets/img/webp/andrixdesign.webp",
+    type: "uxui",
+    technologies: ["Figma", "Photoshop", "Lightroom"],
+    colors: [
+      { color: "0056ff", font: "FFFFFF" },
+      { color: "B415FF", font: "FFFFFF" },
+      { color: "161616", font: "FFFFFF" },
+      { color: "232323", font: "FFFFFF" },
+      { color: "FFFFFF", font: "161616" },
+    ],
+    page: [
+      {
+        title: "HeroSection",
+        description: "The Andrix portfolio for design projects & services.",
+        call: [
+          {
+            name: "Visit Website",
+            link: "https://www.andrix.design/",
+          },
+          {
+            name: "View on Github",
+            link: "https://github.com/adrianholz/Andrix-Design",
+          },
+        ],
+      },
+      {
+        title: "MetaSection",
+        objective: "Personal Portfolio",
+        duration: "28 days (1 month)",
+        status: "Finished 12/2024",
+      },
+      {
+        title: "DescriptionSection",
+        heading: "A hub for all my design work.",
+        theme: "light",
+        position: "left",
+        video: false,
+        animation: true,
+        preview: "/assets/img/webp/andrixdesign.webp",
+        text: [
+          "Andrix Design is the project I made to showcase all my design work throughout the years. Websites, digital artwork, video editing, well, everything that I've ever designed is there.",
+          "This project was recently redesigned and redeveloped in order to optimize the user experience even further.",
+        ],
+      },
+    ],
+  },
+  {
+    title: {
+      name: "Andrix",
+      secondName: " Dev",
+    },
+    description: [
+      "Andrix Dev is the project I made to showcase all my dev work throughout the years, made in parallel with Andrix Design.",
+      "It showcases and describes projects such as static websites, web applications, e-commerces, desktop applications, and games.",
+    ],
+    scale: "Major Project",
+    video: false,
+    preview: "/assets/img/webp/andrixdev.webp",
+    type: "uxui",
+    technologies: ["Figma", "Photoshop", "Lightroom"],
+    colors: [
+      { color: "0056ff", font: "FFFFFF" },
+      { color: "B415FF", font: "FFFFFF" },
+      { color: "161616", font: "FFFFFF" },
+      { color: "232323", font: "FFFFFF" },
+      { color: "FFFFFF", font: "161616" },
+    ],
+    page: [
+      {
+        title: "HeroSection",
+        description:
+          "The Andrix portfolio for development projects & services.",
+        call: [
+          {
+            name: "Visit Website",
+            link: "https://www.andrix.dev/",
+          },
+          {
+            name: "View on Github",
+            link: "https://github.com/adrianholz/Andrix-Dev",
+          },
+        ],
+      },
+      {
+        title: "MetaSection",
+        objective: "Personal Portfolio",
+        duration: "28 days (1 month)",
+        status: "Finished 12/2024",
+      },
+      {
+        title: "DescriptionSection",
+        heading: "A hub for all my dev work.",
+        theme: "light",
+        position: "left",
+        video: false,
+        animation: true,
+        preview: "/assets/img/webp/andrixdev.webp",
+        text: [
+          "Andrix Dev is the project I made to showcase all my dev work throughout the years. Websites, applications, games, well, everything that I've ever developed is there.",
+          "This project was made in parallel with Andrix Design's redesign, being deployed at the same time.",
+        ],
+      },
+    ],
+  },
+  {
+    title: {
       name: "Nike",
       secondName: " Concept",
       style: {

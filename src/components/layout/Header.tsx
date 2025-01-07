@@ -99,13 +99,9 @@ export default function Header({ type }: { type?: string }) {
             </ul>
           </nav>
 
-          <a
-            href="/assets/files/pdf/Adrian Holzschuh Resume.pdf"
-            target="_blank"
-            className="resume"
-          >
-            <img src="/assets/img/svg/resume.svg" alt="Resume" />
-            <p>Resume</p>
+          <a href="https://www.andrix.dev" className="header-call">
+            <img src="/assets/img/svg/code.svg" alt="Development Icon" />
+            <p>Dev</p>
             <div
               className={`blur ${type ? type : "uxui"} active`}
               ref={(el) => {

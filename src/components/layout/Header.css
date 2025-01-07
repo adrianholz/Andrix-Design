@@ -11,8 +11,9 @@ header {
     > a:nth-child(1) {
       margin: 0 40px;
     }
-    .resume {
+    .header-call {
       background: var(--b1);
+      height: 63.2px;
       overflow: hidden;
       color: var(--w1);
       position: relative;
@@ -21,8 +22,9 @@ header {
       display: flex;
       justify-content: center;
       align-items: center;
-      gap: 18px;
-      padding: 12px 32px;
+      gap: 12px;
+      margin: 0 20px;
+      padding: 12px 48px;
       border-radius: 20px;
       .blur {
         z-index: 0;
@@ -32,7 +34,7 @@ header {
         opacity: 0;
       }
       img {
-        max-width: 30px;
+        max-width: 35px;
         position: relative;
         z-index: 1;
       }
@@ -310,10 +312,10 @@ header {
           max-width: 80px;
         }
       }
-      .resume {
-        padding: 12px 30px;
+      .header-call {
+        padding: 12px 36px;
+        margin: 0;
         img {
-          max-width: 25px;
           position: relative;
           z-index: 1;
         }
