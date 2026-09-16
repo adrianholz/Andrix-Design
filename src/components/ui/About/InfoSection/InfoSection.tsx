@@ -33,9 +33,9 @@ export default function InfoSection() {
               <div>
                 <span>How'd you describe your work?</span>
                 <p>
-                  “My goal is to bring satisfaction not only to my clients in
-                  the form of results but also to the users of my projects in
-                  the form of experience”.
+                  “My goal is to deliver satisfaction not only to my clients
+                  through meaningful results, but also to the users of my
+                  projects through great experiences”.
                 </p>
               </div>
             </div>
@@ -44,14 +44,14 @@ export default function InfoSection() {
               and designer responsible for projects here at{" "}
               <strong>Andrix Design</strong>. <br />
               <br />
-              Being interested in technology from a very young age, I have
-              always been fascinated by the possibility of externalizing my
-              creativity through digital means. As of today, I have been working
-              with graphic and digital design for over 5 years, and am happy to
-              say that I've been able to help many clients achieve their goals
-              through my work. Through Andrix, I can now showcase the skills
-              I've acquired over the years and help you achieve the best digital
-              presence possible.
+              Having been interested in technology from a young age, I’ve always
+              been fascinated by the ability to bring my creativity to life
+              through digital media. Over the past ten years, I’ve worked in
+              graphic and digital design, helping clients turn their ideas into
+              meaningful and effective digital experiences. Through Andrix, I
+              can bring together the skills and experience I’ve developed over
+              the years to help you build the strongest digital presence
+              possible.
             </p>
           </div>
         </div>
@@ -76,7 +76,7 @@ export default function InfoSection() {
                 <span>From</span>
                 <p>São Paulo, SP</p>
                 <span>Currently in</span>
-                <p>Vancouver, BC</p>
+                <p>Victoria, BC</p>
               </div>
             </div>
             <div>
@@ -88,7 +88,7 @@ export default function InfoSection() {
               </p>
               <span>Phone</span>
               <p>
-                <a href="tel:16046792058">+1 (604) 679-2058</a>
+                <a href="tel:16046792058">+55 (11) 92158-7707</a>
               </p>
             </div>
             <div>

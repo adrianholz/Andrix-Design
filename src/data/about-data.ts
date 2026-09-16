@@ -1,8 +1,16 @@
 export const experiences = [
   {
+    position: "Staff Front-End Developer",
+    company: "Ship Sidekick Inc.",
+    period: "Feb 2025 - Present",
+    description:
+      "Responsible for implementing user interface components and ensuring the technical feasibility of UI/UX designs on the shipsidekick.com application.",
+    skills: ["ReactJS", "NextJS", "UX/UI & Web Design"],
+  },
+  {
     position: "Lead Front-End Developer",
     company: "Dougal Technologies Inc.",
-    period: "Apr 2024 - Present",
+    period: "Apr 2024 - Feb 2025",
     description:
       "Leading Front-End development with React, Next.JS, and Flutter frameworks. Additionally responsible for supporting UX/UI designers with design tasks.",
     skills: ["ReactJS", "NextJS", "UX/UI & Web Design"],

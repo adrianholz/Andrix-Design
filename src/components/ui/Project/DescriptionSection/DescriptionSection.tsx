@@ -34,6 +34,7 @@ export default function DescriptionSection({
               autoPlay
               muted
               loop
+              playsInline
               disablePictureInPicture
             ></video>
           ) : (

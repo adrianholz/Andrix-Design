@@ -30,7 +30,7 @@ export default function HeroSection() {
           width={513}
           height={748}
           alt="Adrian Holzschuh"
-          src="/assets/img/webp/adrianholzschuhfull.webp"
+          src="/assets/img/webp/picfallback.webp"
         />
       </div>
       <div className="blur uxui active"></div>

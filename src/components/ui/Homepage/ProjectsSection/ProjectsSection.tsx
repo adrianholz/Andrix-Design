@@ -64,7 +64,12 @@ export default function ProjectsSection() {
                     }
                   >
                     {project.video ? (
-                      <video loop muted src={project.preview}></video>
+                      <video
+                        loop
+                        muted
+                        playsInline
+                        src={project.preview}
+                      ></video>
                     ) : null}
                     <div
                       className="start"

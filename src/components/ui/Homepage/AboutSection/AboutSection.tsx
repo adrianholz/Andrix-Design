@@ -18,7 +18,7 @@ export default function AboutSection() {
         <div className="about-inner">
           <span>Adrian</span>
           <Image
-            src="/assets/img/webp/adrianholzschuhfull.webp"
+            src="/assets/img/webp/picfallback.webp"
             width={520}
             height={758}
             alt="Adrian Holzschuh"

@@ -58,6 +58,7 @@ export default function Projects({ tags }: { tags: Tags }) {
                         autoPlay
                         muted
                         loop
+                        playsInline
                         className="project-cover"
                         disablePictureInPicture
                         style={project.videoStyle ? project.videoStyle : {}}

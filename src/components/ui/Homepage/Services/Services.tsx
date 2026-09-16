@@ -53,6 +53,7 @@ export default function Services({
             <video
               muted
               autoPlay
+              playsInline
               loop
               src={`assets/video/${service.file}.webm`}
             ></video>

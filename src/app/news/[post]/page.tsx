@@ -92,6 +92,7 @@ export default function Post({ params }: { params: Promise<PostParams> }) {
                         autoPlay
                         muted
                         loop
+                        playsInline
                         disablePictureInPicture
                         key={index}
                         className="post-media"

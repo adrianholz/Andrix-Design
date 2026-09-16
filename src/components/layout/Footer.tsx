@@ -24,13 +24,13 @@ export default function Footer({ type }: { type?: string }) {
           </Link>
           <div className="footer-contact">
             <h2>Contact</h2>
-            <a href="tel:+16046792058">+1 (604) 679-2058</a>
+            <a href="tel:+16046792058">+55 (11) 92158-7707</a>
             <a href="mailto:adrian.holzschuh@gmail.com">
               adrian.holzschuh@gmail.com
             </a>
             <span></span>
             <address>
-              Vancouver, BC <br />
+              Victoria, BC <br />
               Canada
             </address>
             <span></span>
